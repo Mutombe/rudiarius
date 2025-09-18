@@ -1,5 +1,6 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Layout from "./components/nav";
 import HomePage from "./components/home";
 import AboutPage from "./components/about";
@@ -8,6 +9,16 @@ import { StrategiesPage } from "./components/approach";
 import TeamPage from "./components/team";
 import ContactPage from "./components/contact";
 import { AnimatePresence } from "framer-motion";
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
 
 const App = () => {
   return (
@@ -94,6 +105,7 @@ const App = () => {
             scroll-behavior: smooth;
           }
         `}</style>
+        <ScrollToTop />
         <Layout>
           <AnimatePresence mode="wait">
             <Routes>

@@ -47,7 +47,7 @@ const Layout = ({ children }) => {
           <div className="flex items-center justify-between">
             <Link to="/" className="flex items-center space-x-2">
               <div className="text-2xl font-bold text-white">
-                <img src="/logob.png" alt="Logo" className="w-32 h-20" />
+                <img src="/logob.png" alt="Logo" className="w-45 h-12" />
               </div>
             </Link>
 
@@ -116,7 +116,7 @@ const Layout = ({ children }) => {
           <div className="grid md:grid-cols-3 gap-8">
             <div>
               <div className="text-xl font-bold text-white mb-4">
-                <img src="/logob.png" alt="Logo" className="w-24 h-16" />
+                <img src="/logob.png" alt="Logo" className="w-24 h-6" />
               </div>
               <p className="gellix-font text-gray-300 text-sm">
                 Passion. Independence. Rigour.
