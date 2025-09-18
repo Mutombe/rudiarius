@@ -42,12 +42,12 @@ const Layout = ({ children }) => {
       </div>
 
       {/* Navigation */}
-      <nav className="relative z-50 px-6 py-4">
+      <nav className="sticky top-0 z-50 px-6 py-4">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center justify-between">
             <Link to="/" className="flex items-center space-x-2">
               <div className="text-2xl font-bold text-white">
-                <img src="/logob.png" alt="Logo" className="w-24 h-16" />
+                <img src="/logob.png" alt="Logo" className="w-32 h-20" />
               </div>
             </Link>
 
@@ -116,7 +116,7 @@ const Layout = ({ children }) => {
           <div className="grid md:grid-cols-3 gap-8">
             <div>
               <div className="text-xl font-bold text-white mb-4">
-                <img src="/logob.png" alt="Logo" className="w-18 h-12" />
+                <img src="/logob.png" alt="Logo" className="w-24 h-16" />
               </div>
               <p className="gellix-font text-gray-300 text-sm">
                 Passion. Independence. Rigour.

@@ -73,7 +73,7 @@ export const ApproachPage = () => {
           >
             <div className="relative rounded-3xl overflow-hidden h-96">
               <img 
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80"
+                src="/10.jpg"
                 alt="Investment analysis and market research"
                 className="w-full h-full object-cover"
               />
@@ -152,7 +152,7 @@ export const ApproachPage = () => {
           >
             <div className="relative rounded-3xl overflow-hidden h-80">
               <img 
-                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2426&q=80"
+                src="/11.jpg"
                 alt="Financial data analysis and charts"
                 className="w-full h-full object-cover"
               />
@@ -558,7 +558,7 @@ export const StrategiesPage = () => {
           >
             <div className="relative rounded-3xl overflow-hidden h-96">
               <img 
-                src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80"
+                src="/18.jpg"
                 alt="Global investment portfolio visualization"
                 className="w-full h-full object-cover"
               />
@@ -592,7 +592,7 @@ export const StrategiesPage = () => {
           >
             <div className="relative rounded-3xl overflow-hidden h-96">
               <img 
-                src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80"
+                src="africa.jpg"
                 alt="Trade finance and international commerce"
                 className="w-full h-full object-cover"
               />
@@ -749,7 +749,7 @@ export const StrategiesPage = () => {
               <div className="relative">
                 <div className="relative rounded-2xl overflow-hidden h-64">
                   <img 
-                    src="https://images.unsplash.com/photo-1642790595397-7047dc98fa72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2530&q=80"
+                    src="/20.jpg"
                     alt="Portfolio performance analytics"
                     className="w-full h-full object-cover"
                   />

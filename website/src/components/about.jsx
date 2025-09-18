@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, ArrowRight, Shield, TrendingUp, Globe, Users, Mail, Phone, MapPin, ChevronDown } from 'lucide-react';
+import React from 'react';
+import { motion } from 'framer-motion';
+import { Shield, TrendingUp, Globe, Users, Award, Target } from 'lucide-react';
 
 // Color palette from images
 const colors = {
@@ -27,7 +26,7 @@ const GlassCard = ({ children, className = "", ...props }) => (
 
 const AboutPage = () => {
   return (
-    <div className="px-6 py-20">
+    <div className="px-6 py-20 bg-gradient-to-b from-slate-900 via-blue-900/20 to-slate-900">
       <div className="max-w-7xl mx-auto">
         {/* Hero Section */}
         <motion.div
@@ -101,83 +100,118 @@ const AboutPage = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="relative"
           >
-            <div className="bg-gradient-to-br from-blue-900/50 to-purple-900/50 backdrop-blur-sm border border-white/20 rounded-3xl p-8 h-96 flex items-center justify-center relative overflow-hidden">
-              <div className="text-center z-10">
-                <div className="w-24 h-24 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center mb-6 mx-auto">
-                  <Shield size={40} className="text-white" />
-                </div>
-                <h3 className="text-2xl font-bold text-white mb-2">Investment Excellence</h3>
-                <p className="text-gray-300">Trusted by institutions worldwide</p>
-              </div>
+            <div className="relative rounded-3xl overflow-hidden h-96">
+              <img 
+                src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80"
+                alt="Modern office building and investment environment"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-blue-900/80 via-transparent to-transparent"></div>
               
-              {/* Background decoration */}
-              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-500/20 via-transparent to-transparent"></div>
+              <div className="absolute bottom-6 left-6 right-6">
+                <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-4">
+                  <div className="text-center z-10">
+                    <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center mb-4 mx-auto">
+                      <Shield size={32} className="text-white" />
+                    </div>
+                    <h3 className="text-xl font-bold text-white mb-2">Investment Excellence</h3>
+                    <p className="text-gray-300 text-sm">Trusted by institutions worldwide</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>
 
-        {/* Gladiator Story Section */}
+        {/* Gladiator Story Section with Enhanced Visuals */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
           className="mb-20"
         >
-          <GlassCard className="text-center">
-            <span className="text-blue-400 text-sm tracking-wider uppercase font-semibold mb-4 block">
-              OUR NAME
-            </span>
-            <h2 className="text-4xl font-bold text-white mb-8">The Story of <span className="text-blue-400">Rudiarius</span></h2>
+          <GlassCard className="text-center relative overflow-hidden">
+            {/* Background decoration */}
+            <div className="absolute inset-0 opacity-10">
+              <img 
+                src="https://images.unsplash.com/photo-1615906655593-ad0386982a0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80"
+                alt="Ancient Roman architecture"
+                className="w-full h-full object-cover"
+              />
+            </div>
             
-            <div className="max-w-4xl mx-auto">
-              <p className="text-xl text-gray-300 leading-relaxed mb-6">
-                A gladiator who earned his freedom through skill and fortune while fighting in the arena.
-              </p>
+            <div className="relative z-10">
+              <span className="text-blue-400 text-sm tracking-wider uppercase font-semibold mb-4 block">
+                OUR NAME
+              </span>
+              <h2 className="text-4xl font-bold text-white mb-8">The Story of <span className="text-blue-400">Rudiarius</span></h2>
               
-              <div className="grid md:grid-cols-3 gap-8 my-12">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                    <Users size={32} className="text-white" />
-                  </div>
-                  <h4 className="text-white font-semibold mb-2">The Arena</h4>
-                  <p className="text-gray-400 text-sm">Gladiators fought to entertain crowds at the behest of the Emperor</p>
-                </div>
-                
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                    <Shield size={32} className="text-white" />
-                  </div>
-                  <h4 className="text-white font-semibold mb-2">The Rudis</h4>
-                  <p className="text-gray-400 text-sm">A wooden sword symbolizing freedom from slavery</p>
-                </div>
-                
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-blue-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                    <Globe size={32} className="text-white" />
-                  </div>
-                  <h4 className="text-white font-semibold mb-2">Freedom</h4>
-                  <p className="text-gray-400 text-sm">Free to choose their path, many returned as free fighters</p>
-                </div>
-              </div>
-              
-              <div className="bg-blue-900/20 rounded-2xl p-8">
-                <p className="text-gray-300 leading-relaxed">
-                  Imbued with a strong entrepreneurial spirit, these <strong className="text-white">Rudiarii</strong> of the modern investment world are 
-                  fiercely independent, energetic and totally focused on achieving their clients' mandate.
+              <div className="max-w-4xl mx-auto">
+                <p className="text-xl text-gray-300 leading-relaxed mb-6">
+                  A gladiator who earned his freedom through skill and fortune while fighting in the arena.
                 </p>
+                
+                <div className="grid md:grid-cols-3 gap-8 my-12">
+                  <div className="text-center">
+                    <div className="relative mb-4">
+                      <div className="w-20 h-20 bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl flex items-center justify-center mx-auto">
+                        <Users size={32} className="text-white" />
+                      </div>
+                      <div className="absolute inset-0 bg-orange-500/20 rounded-2xl blur-xl"></div>
+                    </div>
+                    <h4 className="text-white font-semibold mb-2">The Arena</h4>
+                    <p className="text-gray-400 text-sm">Gladiators fought to entertain crowds at the behest of the Emperor</p>
+                  </div>
+                  
+                  <div className="text-center">
+                    <div className="relative mb-4">
+                      <div className="w-20 h-20 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center mx-auto">
+                        <Shield size={32} className="text-white" />
+                      </div>
+                      <div className="absolute inset-0 bg-blue-500/20 rounded-2xl blur-xl"></div>
+                    </div>
+                    <h4 className="text-white font-semibold mb-2">The Rudis</h4>
+                    <p className="text-gray-400 text-sm">A wooden sword symbolizing freedom from slavery</p>
+                  </div>
+                  
+                  <div className="text-center">
+                    <div className="relative mb-4">
+                      <div className="w-20 h-20 bg-gradient-to-r from-green-500 to-blue-500 rounded-2xl flex items-center justify-center mx-auto">
+                        <Globe size={32} className="text-white" />
+                      </div>
+                      <div className="absolute inset-0 bg-green-500/20 rounded-2xl blur-xl"></div>
+                    </div>
+                    <h4 className="text-white font-semibold mb-2">Freedom</h4>
+                    <p className="text-gray-400 text-sm">Free to choose their path, many returned as free fighters</p>
+                  </div>
+                </div>
+                
+                <div className="bg-blue-900/20 rounded-2xl p-8 border border-blue-500/20">
+                  <p className="text-gray-300 leading-relaxed">
+                    Imbued with a strong entrepreneurial spirit, these <strong className="text-white">Rudiarii</strong> of the modern investment world are 
+                    fiercely independent, energetic and totally focused on achieving their clients' mandate.
+                  </p>
+                </div>
               </div>
             </div>
           </GlassCard>
         </motion.div>
 
-        {/* Philosophy & Approach */}
+        {/* Philosophy & Approach with Images */}
         <div className="grid lg:grid-cols-2 gap-12 mb-20">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
-            <GlassCard>
+            <GlassCard className="relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 opacity-20">
+                <img 
+                  src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80"
+                  alt="Investment charts"
+                  className="w-full h-full object-cover rounded-2xl"
+                />
+              </div>
               <span className="text-blue-400 text-sm tracking-wider uppercase font-semibold mb-4 block">
                 PHILOSOPHY
               </span>
@@ -204,7 +238,14 @@ const AboutPage = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 1 }}
           >
-            <GlassCard>
+            <GlassCard className="relative overflow-hidden">
+              <div className="absolute top-0 left-0 w-24 h-24 opacity-20">
+                <img 
+                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2415&q=80"
+                  alt="Business analytics"
+                  className="w-full h-full object-cover rounded-2xl"
+                />
+              </div>
               <span className="text-blue-400 text-sm tracking-wider uppercase font-semibold mb-4 block">
                 EXPERTISE
               </span>
@@ -212,8 +253,8 @@ const AboutPage = () => {
               
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="w-6 h-6 rounded-full bg-blue-500 flex items-center justify-center flex-shrink-0 mt-1">
-                    <div className="w-2 h-2 rounded-full bg-white"></div>
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center flex-shrink-0 mt-1">
+                    <Globe size={16} className="text-white" />
                   </div>
                   <div>
                     <h4 className="text-white font-semibold mb-1">African Market Expertise</h4>
@@ -222,8 +263,8 @@ const AboutPage = () => {
                 </div>
                 
                 <div className="flex items-start space-x-4">
-                  <div className="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0 mt-1">
-                    <div className="w-2 h-2 rounded-full bg-white"></div>
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-r from-green-500 to-blue-500 flex items-center justify-center flex-shrink-0 mt-1">
+                    <Target size={16} className="text-white" />
                   </div>
                   <div>
                     <h4 className="text-white font-semibold mb-1">Independent Approach</h4>
@@ -232,8 +273,8 @@ const AboutPage = () => {
                 </div>
                 
                 <div className="flex items-start space-x-4">
-                  <div className="w-6 h-6 rounded-full bg-purple-500 flex items-center justify-center flex-shrink-0 mt-1">
-                    <div className="w-2 h-2 rounded-full bg-white"></div>
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center flex-shrink-0 mt-1">
+                    <Award size={16} className="text-white" />
                   </div>
                   <div>
                     <h4 className="text-white font-semibold mb-1">Proven Track Record</h4>
@@ -264,10 +305,34 @@ const AboutPage = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { year: '2014', title: 'Company Founded', desc: 'Rudiarius Capital Management established as independent investment firm', color: 'from-blue-500 to-purple-500' },
-              { year: '2016', title: 'First Major Fund', desc: 'Launched our flagship African equity investment strategy', color: 'from-green-500 to-blue-500' },
-              { year: '2019', title: 'Trade Finance', desc: 'Introduced multicurrency trade finance solutions for SADC region', color: 'from-orange-500 to-red-500' },
-              { year: '2024', title: 'Growth Milestone', desc: 'Reached significant assets under management and expanded team', color: 'from-purple-500 to-pink-500' }
+              { 
+                year: '2014', 
+                title: 'Company Founded', 
+                desc: 'Rudiarius Capital Management established as independent investment firm', 
+                color: 'from-blue-500 to-purple-500',
+                image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80'
+              },
+              { 
+                year: '2016', 
+                title: 'First Major Fund', 
+                desc: 'Launched our flagship African equity investment strategy', 
+                color: 'from-green-500 to-blue-500',
+                image: 'https://images.unsplash.com/photo-1559526324-4b87b5e36e44?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80'
+              },
+              { 
+                year: '2019', 
+                title: 'Trade Finance', 
+                desc: 'Introduced multicurrency trade finance solutions for SADC region', 
+                color: 'from-orange-500 to-red-500',
+                image: 'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80'
+              },
+              { 
+                year: '2024', 
+                title: 'Growth Milestone', 
+                desc: 'Reached significant assets under management and expanded team', 
+                color: 'from-purple-500 to-pink-500',
+                image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80'
+              }
             ].map((milestone, index) => (
               <motion.div
                 key={index}
@@ -275,12 +340,23 @@ const AboutPage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 1.4 + index * 0.1 }}
               >
-                <GlassCard className="text-center h-full">
-                  <div className={`w-12 h-12 rounded-xl bg-gradient-to-r ${milestone.color} flex items-center justify-center mx-auto mb-4`}>
-                    <span className="text-white font-bold text-lg">{milestone.year}</span>
+                <GlassCard className="text-center h-full relative overflow-hidden">
+                  {/* Background image */}
+                  <div className="absolute inset-0 opacity-10">
+                    <img 
+                      src={milestone.image}
+                      alt={milestone.title}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                  <h4 className="text-white font-semibold mb-3">{milestone.title}</h4>
-                  <p className="text-gray-400 text-sm leading-relaxed">{milestone.desc}</p>
+                  
+                  <div className="relative z-10">
+                    <div className={`w-16 h-16 rounded-xl bg-gradient-to-r ${milestone.color} flex items-center justify-center mx-auto mb-4 shadow-xl`}>
+                      <span className="text-white font-bold text-lg">{milestone.year}</span>
+                    </div>
+                    <h4 className="text-white font-semibold mb-3 text-lg">{milestone.title}</h4>
+                    <p className="text-gray-400 text-sm leading-relaxed">{milestone.desc}</p>
+                  </div>
                 </GlassCard>
               </motion.div>
             ))}
@@ -291,26 +367,29 @@ const AboutPage = () => {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1.6 }}
+          transition={{ duration: 0.8, delay: 1.8 }}
         >
-          <GlassCard className="text-center">
-            <h3 className="text-3xl font-bold text-white mb-4">Ready to start your investment journey?</h3>
-            <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-              Join us in exploring opportunities across African markets with our experienced team and proven strategies.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/contact"
-                className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-2xl font-semibold transition-all duration-300 transform hover:scale-105"
-              >
-                Get Started Today
-              </Link>
-              <Link
-                to="/strategies"
-                className="px-8 py-4 bg-white/10 border border-white/20 text-white hover:bg-white/20 rounded-2xl font-semibold transition-all duration-300"
-              >
-                View Our Strategies
-              </Link>
+          <GlassCard className="text-center relative overflow-hidden">
+            <div className="absolute inset-0 opacity-20">
+              <img 
+                src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80"
+                alt="Professional meeting"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="relative z-10">
+              <h3 className="text-3xl font-bold text-white mb-4">Ready to start your investment journey?</h3>
+              <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
+                Join us in exploring opportunities across African markets with our experienced team and proven strategies.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <button className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-2xl font-semibold transition-all duration-300 transform hover:scale-105">
+                  Get Started Today
+                </button>
+                <button className="px-8 py-4 bg-white/10 border border-white/20 text-white hover:bg-white/20 rounded-2xl font-semibold transition-all duration-300">
+                  View Our Strategies
+                </button>
+              </div>
             </div>
           </GlassCard>
         </motion.div>
@@ -319,4 +398,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage
+export default AboutPage;
