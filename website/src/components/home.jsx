@@ -176,7 +176,7 @@ const HomePage = () => {
               </Link>
             </motion.div>
 
-            {/* Scroll indicator */}
+            {/* Scroll indicator 
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -191,7 +191,7 @@ const HomePage = () => {
                 <span className="text-xs mb-2 tracking-wider">SCROLL</span>
                 <div className="w-px h-8 bg-gradient-to-b from-gray-400 to-transparent" />
               </motion.div>
-            </motion.div>
+            </motion.div>*/}
           </motion.div>
         </div>
 

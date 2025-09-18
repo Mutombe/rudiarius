@@ -102,7 +102,7 @@ const AboutPage = () => {
           >
             <div className="relative rounded-3xl overflow-hidden h-96">
               <img 
-                src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80"
+                src="/14.jpg"
                 alt="Modern office building and investment environment"
                 className="w-full h-full object-cover"
               />
