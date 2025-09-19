@@ -2,6 +2,12 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { Shield, TrendingUp, Globe, Users, Award, Target } from "lucide-react";
+import { MdOutlineStadium } from "react-icons/md";
+import { GiFreedomDove } from "react-icons/gi";
+import { GiHarpoonChain } from "react-icons/gi";
+import { GiPiercingSword } from "react-icons/gi";
+import { GiAfrica } from "react-icons/gi";
+
 
 // Color palette from images
 const colors = {
@@ -156,7 +162,7 @@ const AboutPage = () => {
                   <div className="text-center">
                     <div className="relative mb-4">
                       <div className="w-20 h-20 bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl flex items-center justify-center mx-auto">
-                        <Users size={32} className="text-white" />
+                        <MdOutlineStadium size={32} className="text-white" />
                       </div>
                       <div className="absolute inset-0 bg-orange-500/20 rounded-2xl blur-xl"></div>
                     </div>
@@ -170,7 +176,7 @@ const AboutPage = () => {
                   <div className="text-center">
                     <div className="relative mb-4">
                       <div className="w-20 h-20 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center mx-auto">
-                        <Shield size={32} className="text-white" />
+                        <GiPiercingSword size={32} className="text-white" />
                       </div>
                       <div className="absolute inset-0 bg-blue-500/20 rounded-2xl blur-xl"></div>
                     </div>
@@ -183,7 +189,7 @@ const AboutPage = () => {
                   <div className="text-center">
                     <div className="relative mb-4">
                       <div className="w-20 h-20 bg-gradient-to-r from-green-500 to-blue-500 rounded-2xl flex items-center justify-center mx-auto">
-                        <Globe size={32} className="text-white" />
+                        <GiFreedomDove size={32} className="text-white" />
                       </div>
                       <div className="absolute inset-0 bg-green-500/20 rounded-2xl blur-xl"></div>
                     </div>
@@ -261,7 +267,7 @@ const AboutPage = () => {
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="w-8 h-8 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center flex-shrink-0 mt-1">
-                    <Globe size={16} className="text-white" />
+                    <GiAfrica size={16} className="text-white" />
                   </div>
                   <div>
                     <h4 className="text-gray-900 font-semibold mb-1">

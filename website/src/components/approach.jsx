@@ -21,6 +21,11 @@ import {
   ChevronDown,
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { LuTrendingUpDown } from "react-icons/lu";
+import { RiSketching } from "react-icons/ri";
+import { SiFsecure } from "react-icons/si";
+import { GiWorld } from "react-icons/gi";
+
 
 // Color palette from images
 const colors = {
@@ -135,7 +140,7 @@ export const ApproachPage = () => {
           <div className="grid lg:grid-cols-3 gap-8">
             <div className="text-center bg-white rounded-lg shadow-lg p-8">
               <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <TrendingUp size={32} className="text-white" />
+                <RiSketching  size={32} className="text-white" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">
                 Market Inefficiencies
@@ -149,7 +154,7 @@ export const ApproachPage = () => {
 
             <div className="text-center bg-white rounded-lg shadow-lg p-8">
               <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-blue-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <Shield size={32} className="text-white" />
+                <SiFsecure size={32} className="text-white" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">
                 Risk Management
@@ -163,7 +168,7 @@ export const ApproachPage = () => {
 
             <div className="text-center bg-white rounded-lg shadow-lg p-8">
               <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <Globe size={32} className="text-white" />
+                <GiWorld size={32} className="text-white" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">
                 Long-term Focus
@@ -302,7 +307,7 @@ export const ApproachPage = () => {
             <GlassCard>
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl flex items-center justify-center mr-4">
-                  <TrendingUp size={24} className="text-white" />
+                  <RiSketching size={24} className="text-white" />
                 </div>
                 <h3 className="text-2xl font-semibold text-white">
                   Equity Investment Process
@@ -356,7 +361,7 @@ export const ApproachPage = () => {
             <GlassCard>
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-blue-500 rounded-xl flex items-center justify-center mr-4">
-                  <Shield size={24} className="text-white" />
+                  <SiFsecure size={24} className="text-white" />
                 </div>
                 <h3 className="text-2xl font-semibold text-white">
                   Fixed Income Process

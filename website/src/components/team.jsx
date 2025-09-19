@@ -12,6 +12,10 @@ import {
   Globe,
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { IoPeopleCircleOutline } from "react-icons/io5";
+import { GiWorld } from "react-icons/gi";
+import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
+import { RiSketching } from "react-icons/ri";
 
 // Color palette from images
 const colors = {
@@ -72,7 +76,7 @@ const TeamPage = () => {
         >
           <GlassCard className="text-center">
             <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
-              <Users size={32} className="text-white" />
+              <IoPeopleCircleOutline size={32} className="text-white" />
             </div>
             <div className="text-3xl font-bold text-white mb-2">24+</div>
             <div className="text-gray-400 text-sm">
@@ -82,7 +86,7 @@ const TeamPage = () => {
 
           <GlassCard className="text-center">
             <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-blue-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
-              <Globe size={32} className="text-white" />
+              <GiWorld size={32} className="text-white" />
             </div>
             <div className="text-3xl font-bold text-white mb-2">15+</div>
             <div className="text-gray-400 text-sm">Markets Covered</div>
@@ -90,7 +94,7 @@ const TeamPage = () => {
 
           <GlassCard className="text-center">
             <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
-              <Building2 size={32} className="text-white" />
+              <HiOutlineBuildingOffice2 size={32} className="text-white" />
             </div>
             <div className="text-3xl font-bold text-white mb-2">500+</div>
             <div className="text-gray-400 text-sm">Company Site Visits</div>
@@ -132,7 +136,7 @@ const TeamPage = () => {
                 <div className="relative mb-6">
                   <div className="w-40 h-40 mx-auto rounded-2xl overflow-hidden bg-gradient-to-br from-blue-600 to-purple-600 p-1">
                     <div className="w-full h-full rounded-xl overflow-hidden bg-gray-800 flex items-center justify-center">
-                      <Users size={48} className="text-gray-400" />
+                      <IoPeopleCircleOutline size={48} className="text-gray-400" />
                     </div>
                   </div>
                   <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2">
@@ -347,7 +351,7 @@ const TeamPage = () => {
               </div>
               <div className="relative z-10">
                 <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                  <Users size={32} className="text-white" />
+                  <IoPeopleCircleOutline size={32} className="text-white" />
                 </div>
                 <h3 className="text-xl font-semibold text-white mb-4">
                   Independence
@@ -393,7 +397,7 @@ const TeamPage = () => {
               </div>
               <div className="relative z-10">
                 <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                  <Globe size={32} className="text-white" />
+                  <GiWorld size={32} className="text-white" />
                 </div>
                 <h3 className="text-xl font-semibold text-white mb-4">
                   Local Expertise
