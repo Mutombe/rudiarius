@@ -141,7 +141,7 @@ const ContactPage = () => {
     {
       icon: Mail,
       title: "Email Us",
-      details: ["fungai@rudiarius.co.za"],
+      details: ["info@rudiarius.co.za"],
       color: "from-blue-500 to-cyan-600"
     },
     {
