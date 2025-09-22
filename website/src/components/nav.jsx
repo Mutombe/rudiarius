@@ -218,7 +218,7 @@ const Layout = ({ children }) => {
               <div className="space-y-2 text-sm text-gray-300">
                 <div className="flex items-center space-x-2">
                   <Mail size={16} />
-                  <span className="gellix-font">fungai@rudiarius.co.za</span>
+                  <span className="gellix-font">info@rudiarius.co.za</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Phone size={16} />
