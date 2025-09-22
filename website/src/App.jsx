@@ -9,6 +9,16 @@ import { StrategiesPage } from "./components/approach";
 import TeamPage from "./components/team";
 import ContactPage from "./components/contact";
 import { AnimatePresence } from "framer-motion";
+import CookiePolicy from "../policies2";
+import PrivacyPolicy from './components/policies';
+import ESGPolicy from "./components/esg";
+import SFDR from "./components/sfrg";
+import StewardshipCode from "./components/steward";
+import TermsConditions from "./components/terms";
+import ClientPrivacyPolicy from "./components/client";
+import ComplaintsPolicy from "./components/complaints";
+import WhistleblowingPolicy from "./components/whistleblowing";
+import ConflictOfInterestPolicy from "./components/conflict";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -115,6 +125,16 @@ const App = () => {
               <Route path="/strategies" element={<StrategiesPage />} />
               <Route path="/team" element={<TeamPage />} />
               <Route path="/contact" element={<ContactPage />} />
+              <Route path="/cookie-policy" element={<CookiePolicy />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/esg-policy" element={<ESGPolicy />} />
+              <Route path="/sfrg" element={<SFDR />} />
+              <Route path="/stewardship-code" element={<StewardshipCode />} />
+              <Route path="/terms-conditions" element={<TermsConditions />} />
+              <Route path="/client-privacy-policy" element={<ClientPrivacyPolicy />} />
+              <Route path="/complaints-policy" element={<ComplaintsPolicy />} />
+              <Route path="/whistleblowing-policy" element={<WhistleblowingPolicy />} />
+              <Route path="/conflict-of-interest-policy" element={<ConflictOfInterestPolicy />} />
             </Routes>
           </AnimatePresence>
         </Layout>

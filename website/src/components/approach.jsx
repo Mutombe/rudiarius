@@ -105,17 +105,6 @@ export const ApproachPage = () => {
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent"></div>
-
-              <div className="absolute bottom-6 left-6 right-6">
-                <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-4">
-                  <h4 className="text-white font-semibold mb-2">
-                    Market Inefficiencies
-                  </h4>
-                  <p className="text-gray-300 text-sm">
-                    Finding mispriced assets in emerging markets
-                  </p>
-                </div>
-              </div>
             </div>
           </motion.div>
         </div>

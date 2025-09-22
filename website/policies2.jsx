@@ -1,0 +1,135 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+
+const CookiePolicy = () => {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800">
+      <div className="max-w-4xl mx-auto px-6 py-20">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="bg-white/10 backdrop-blur-md rounded-3xl border border-white/20 p-8 md:p-12"
+        >
+          <h1 className="gellix-font text-4xl md:text-5xl font-bold text-white mb-8">Cookie Policy</h1>
+          
+          <div className="gellix-font text-gray-200 space-y-6 leading-relaxed">
+            <section>
+              <h2 className="text-2xl font-bold text-blue-300 mb-4">Introduction</h2>
+              <p>
+                This Cookies Policy explains how Rudiarius Capital Management ("Rudiarius," "we," "us," or "our") uses cookies and similar technologies on our website. When you visit our website, you will be invited to choose which cookies you are willing to accept, and we will only set the cookies you accept (except for those cookies identified as "necessary" cookies below, as you cannot use our website without these cookies).
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-bold text-blue-300 mb-4">What Are Cookies?</h2>
+              <p>
+                Cookies are small text files placed on your device (computer, smartphone, or another electronic device) when you visit our website.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-bold text-blue-300 mb-4">Types of Cookies We Use</h2>
+              
+              <div className="space-y-6">
+                <div className="bg-slate-800/30 rounded-xl p-6 border border-white/10">
+                  <h3 className="text-xl font-semibold text-blue-200 mb-3">Necessary Cookies</h3>
+                  <p>
+                    Necessary cookies help make a website usable by enabling basic functions like page navigation and access to secure areas of the website. The website cannot function properly without these cookies.
+                  </p>
+                </div>
+
+                <div className="bg-slate-800/30 rounded-xl p-6 border border-white/10">
+                  <h3 className="text-xl font-semibold text-blue-200 mb-3">Statistics Cookies</h3>
+                  <p>
+                    Statistic cookies help website owners to understand how visitors interact with websites by collecting and reporting information anonymously.
+                  </p>
+                </div>
+
+                <div className="bg-slate-800/30 rounded-xl p-6 border border-white/10">
+                  <h3 className="text-xl font-semibold text-blue-200 mb-3">Performance Cookies</h3>
+                  <p>
+                    These cookies collect information about how you use our website, such as which pages you visit and if you experience any errors. These cookies do not collect any information that could identify you.
+                  </p>
+                </div>
+
+                <div className="bg-slate-800/30 rounded-xl p-6 border border-white/10">
+                  <h3 className="text-xl font-semibold text-blue-200 mb-3">Preference Cookies</h3>
+                  <p>
+                    These cookies allow our website to remember and provide enhanced, more personalised features.
+                  </p>
+                </div>
+
+                <div className="bg-slate-800/30 rounded-xl p-6 border border-white/10">
+                  <h3 className="text-xl font-semibold text-blue-200 mb-3">Marketing Cookies</h3>
+                  <p>
+                    Marketing cookies are used to track visitors across websites. The intention is to display ads that are relevant and engaging for the individual user and thereby more valuable for publishers and third party advertisers.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-bold text-blue-300 mb-4">How We Use Cookies</h2>
+              <p>We use cookies to:</p>
+              <ul className="space-y-2 list-disc list-inside mt-4">
+                <li>Improve the functionality of our website</li>
+                <li>Analyse website traffic and user behaviour to improve our content and services</li>
+                <li>Remember your preferences and settings</li>
+                <li>Provide personalised content and experiences</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-bold text-blue-300 mb-4">Third-Party Cookies</h2>
+              <p>
+                In addition to our own cookies, we may also use various third-party cookies to report usage statistics of the website. The information generated by the cookie about your use of the website, including your IP address, may be transmitted to and stored by third-party services on servers in various locations. These services will use the information for the purpose of evaluating your use of the website, compiling reports on website usage for website operators and providing other services relating to website activity and internet usage.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-bold text-blue-300 mb-4">Managing and Disabling Cookies</h2>
+              <div className="bg-blue-900/30 rounded-xl p-6 border border-blue-500/30">
+                <p>
+                  You can choose which cookies you accept by choosing the appropriate option on the cookie consent prompt that you see when you first visit our website. If you subsequently change your mind, please delete cookies for our website in your browser and on your next visit you will again be prompted to select your cookie preferences.
+                </p>
+                <p className="mt-4">
+                  For more information about cookies and how to manage them, you can visit <a href="http://www.allaboutcookies.org" className="text-blue-300 hover:text-blue-200 transition-colors" target="_blank" rel="noopener noreferrer">www.allaboutcookies.org</a>.
+                </p>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-bold text-blue-300 mb-4">Updates to This Policy</h2>
+              <p>
+                We may update this Cookies Policy from time to time to reflect changes in our practices and services. When we update this policy, we will update the "Last Updated" date at the top of this page. We encourage you to review this policy periodically to stay informed about our use of cookies and related technologies.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-bold text-blue-300 mb-4">Contact Us</h2>
+              <p>
+                If you have any questions or concerns about our use of cookies, please contact us at:
+              </p>
+              <div className="bg-slate-800/50 rounded-xl p-6 border border-white/10 mt-4">
+                <p><strong>Rudiarius Capital Management</strong></p>
+                <p>Sandton, Johannesburg</p>
+                <p>South Africa</p>
+                <p>Email: <a href="mailto:fungai@rudiarius.co.za" className="text-blue-300 hover:text-blue-200 transition-colors">fungai@rudiarius.co.za</a></p>
+                <p>Phone: +27 10 017 6996</p>
+              </div>
+            </section>
+
+            <div className="bg-blue-900/30 rounded-xl p-6 border border-blue-500/30 mt-8">
+              <p className="text-sm text-blue-200">
+                <strong>Last Updated:</strong> September 2025
+              </p>
+            </div>
+          </div>
+        </motion.div>
+      </div>
+    </div>
+  );
+};
+
+export default CookiePolicy;

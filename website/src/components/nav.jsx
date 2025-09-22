@@ -1,17 +1,35 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, ArrowRight, Shield, TrendingUp, Globe, Users, Mail, Phone, MapPin, ChevronDown } from 'lucide-react';
+import React, { useState, useEffect } from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+  useLocation,
+} from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
+import {
+  Menu,
+  X,
+  ArrowRight,
+  Shield,
+  TrendingUp,
+  Globe,
+  Users,
+  Mail,
+  Phone,
+  MapPin,
+  ChevronDown,
+} from "lucide-react";
 
 // Color palette from images
 const colors = {
-  primary: '#001D39',
-  secondary: '#0A4174', 
-  tertiary: '#49769F',
-  quaternary: '#4E8EA2',
-  light: '#6EA2B3',
-  lighter: '#7BBDE8',
-  lightest: '#BDD8E9'
+  primary: "#001D39",
+  secondary: "#0A4174",
+  tertiary: "#49769F",
+  quaternary: "#4E8EA2",
+  light: "#6EA2B3",
+  lighter: "#7BBDE8",
+  lightest: "#BDD8E9",
 };
 
 // Layout wrapper with animated background
@@ -24,12 +42,12 @@ const Layout = ({ children }) => {
   }, [location]);
 
   const navItems = [
-    { name: 'Home', path: '/' },
-    { name: 'About', path: '/about' },
-    { name: 'Our Approach', path: '/approach' },
-    { name: 'Strategies', path: '/strategies' },
-    { name: 'Team', path: '/team' },
-    { name: 'Contact', path: '/contact' }
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+    { name: "Our Approach", path: "/approach" },
+    { name: "Strategies", path: "/strategies" },
+    { name: "Team", path: "/team" },
+    { name: "Contact", path: "/contact" },
   ];
 
   return (
@@ -58,9 +76,9 @@ const Layout = ({ children }) => {
                   key={item.path}
                   to={item.path}
                   className={`gellix-font text-sm font-medium transition-colors duration-300 ${
-                    location.pathname === item.path 
-                      ? 'text-blue-300' 
-                      : 'text-white hover:text-blue-200'
+                    location.pathname === item.path
+                      ? "text-blue-300"
+                      : "text-white hover:text-blue-200"
                   }`}
                 >
                   {item.name}
@@ -82,7 +100,7 @@ const Layout = ({ children }) => {
             {isMenuOpen && (
               <motion.div
                 initial={{ opacity: 0, height: 0 }}
-                animate={{ opacity: 1, height: 'auto' }}
+                animate={{ opacity: 1, height: "auto" }}
                 exit={{ opacity: 0, height: 0 }}
                 className="md:hidden mt-4 py-4 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20"
               >
@@ -91,9 +109,9 @@ const Layout = ({ children }) => {
                     key={item.path}
                     to={item.path}
                     className={`gellix-font block px-6 py-3 text-sm font-medium transition-colors ${
-                      location.pathname === item.path 
-                        ? 'text-blue-300' 
-                        : 'text-white hover:text-blue-200'
+                      location.pathname === item.path
+                        ? "text-blue-300"
+                        : "text-white hover:text-blue-200"
                     }`}
                   >
                     {item.name}
@@ -106,9 +124,7 @@ const Layout = ({ children }) => {
       </nav>
 
       {/* Page Content */}
-      <div className="gellix-font relative z-10">
-        {children}
-      </div>
+      <div className="gellix-font relative z-10">{children}</div>
 
       {/* Footer */}
       <footer className="relative z-10 mt-20 px-6 py-12 bg-slate-900/50 backdrop-blur-sm">
@@ -123,32 +139,102 @@ const Layout = ({ children }) => {
               </p>
             </div>
             <div>
-              <h3 className="gellix-font text-white font-semibold mb-4">Contact</h3>
+              <h3 className="gellix-font text-white font-semibold mb-4">
+                Contact
+              </h3>
               <div className="space-y-2 text-sm text-gray-300">
                 <div className="flex items-center space-x-2">
                   <Mail size={16} />
-                  <span className='gellix-font'>fungai@rudiarius.co.za</span>
+                  <span className="gellix-font">fungai@rudiarius.co.za</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Phone size={16} />
-                  <span className='gellix-font'>+27 10 017 6996</span>
+                  <span className="gellix-font">+27 10 017 6996</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <MapPin size={16} />
-                  <span className='gellix-font'>Sandton, Johannesburg</span>
+                  <span className="gellix-font">Sandton, Johannesburg</span>
                 </div>
               </div>
             </div>
             <div>
-              <h3 className="gellix-font text-white font-semibold mb-4">Legal</h3>
+              <h3 className="gellix-font text-white font-semibold mb-4">
+                Legal
+              </h3>
               <div className="text-sm text-gray-300">
-                <p className="gellix-font">FSP License 45286</p>
-                <p className="gellix-font mt-2">Authorized Financial Services Provider</p>
+                <Link
+                  to="/privacy-policy"
+                  className="gellix-font block hover:text-blue-200 transition-colors"
+                >
+                  Privacy Policy
+                </Link>
+                <Link
+                  to="/client-privacy-policy"
+                  className="gellix-font block hover:text-blue-200 transition-colors"
+                >
+                  Client Privacy Policy
+                </Link>
+                <Link
+                  to="/cookie-policy"
+                  className="gellix-font block hover:text-blue-200 transition-colors"
+                >
+                  Cookie Policy
+                </Link>
+                <Link
+                  to="/terms-conditions"
+                  className="gellix-font block hover:text-blue-200 transition-colors"
+                >
+                  Terms & Conditions
+                </Link>
+                <Link
+                  to="/complaints-policy"
+                  className="gellix-font block hover:text-blue-200 transition-colors"
+                >
+                  Complaints Policy
+                </Link>
+                <Link
+                  to="/conflict-of-interest"
+                  className="gellix-font block hover:text-blue-200 transition-colors"
+                >
+                  Conflict of Interest
+                </Link>
+                <Link
+                  to="/whistleblowing-policy"
+                  className="gellix-font block hover:text-blue-200 transition-colors"
+                >
+                  Whistleblowing Policy
+                </Link>
+                <Link
+                  to="/esg-policy"
+                  className="gellix-font block hover:text-blue-200 transition-colors"
+                >
+                  ESG Policy
+                </Link>
+                <Link
+                  to="/stewardship-code"
+                  className="gellix-font block hover:text-blue-200 transition-colors"
+                >
+                  Stewardship Code
+                </Link>
+                <Link
+                  to="/sfdr"
+                  className="gellix-font block hover:text-blue-200 transition-colors"
+                >
+                  SFDR
+                </Link>
+                <p className="gellix-font mt-4 pt-2 border-t border-gray-600">
+                  FSP License 45286
+                </p>
+                <p className="gellix-font">
+                  Authorized Financial Services Provider
+                </p>
               </div>
             </div>
           </div>
           <div className="gellix-font border-t border-white/10 mt-8 pt-8 text-center text-sm text-gray-400">
-            <p>&copy; 2024 Rudiarius Capital Management. All rights reserved.</p>
+            <p>
+              &copy; 2025 Rudiarius Capital Management. All rights reserved.
+            </p>
           </div>
         </div>
       </footer>
