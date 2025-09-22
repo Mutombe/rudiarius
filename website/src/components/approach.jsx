@@ -74,7 +74,7 @@ export const ApproachPage = () => {
             <div className="grid grid-cols-2 gap-6 mb-8">
               <div className="text-center">
                 <div className="text-3xl font-bold text-blue-400 mb-2">
-                  30-60
+                  100+
                 </div>
                 <div className="text-sm text-gray-400">Companies Analyzed</div>
               </div>
@@ -580,8 +580,7 @@ export const StrategiesPage = () => {
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-8">
               Our well-experienced team provides a number of solutions for long
-              term investors, led by our pioneer product the Worldwide Flexible
-              Strategy and the Trade Finance Strategy.
+              term investors, led by our pioneer product the Africa Focused and the Trade Finance Strategy.
             </p>
 
             <div className="grid md:grid-cols-3 gap-8 max-w-2xl mx-auto">
@@ -615,13 +614,12 @@ export const StrategiesPage = () => {
                 FLAGSHIP STRATEGY
               </span>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Worldwide Flexible Strategy
+                Africa Focused Strategy
               </h2>
               <p className="text-gray-700 leading-relaxed mb-6">
-                Unconstrained and fully flexible, we combine equity and fixed
+                We combine equity and fixed
                 income assets to maximise long-term total returns by shifting
-                our exposure across various asset classes, in both local and
-                foreign markets.
+                our exposure across various asset classes, in local markets.
               </p>
               <p className="text-gray-700 leading-relaxed mb-8">
                 We strive for steady return in the fund with the full ability to
@@ -663,10 +661,10 @@ export const StrategiesPage = () => {
                   Multi-Asset
                 </span>
                 <span className="px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm">
-                  Flexible
+                  Focused
                 </span>
                 <span className="px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm">
-                  Global
+                  Africa
                 </span>
               </div>
             </div>

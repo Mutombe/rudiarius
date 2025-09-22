@@ -92,10 +92,10 @@ const AboutPage = () => {
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-blue-600 mb-1">
-                    $2.4M
+                    R2 Billion
                   </div>
                   <div className="text-sm text-gray-600">
-                    Assets Under Management
+                    Peak Assets Management
                   </div>
                 </div>
                 <div className="text-center">

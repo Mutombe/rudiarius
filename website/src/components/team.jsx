@@ -129,7 +129,7 @@ const TeamPage = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
             {/* John Doe 1 - Chief Investment Officer */}
             <GlassCard className="relative overflow-hidden">
               <div className="text-center">
@@ -147,9 +147,9 @@ const TeamPage = () => {
                 </div>
 
                 <div className="space-y-3 mb-6">
-                  <h3 className="text-2xl font-bold text-white">John Doe</h3>
+                  <h3 className="text-2xl font-bold text-white">Edward Bennet</h3>
                   <p className="text-blue-300 font-semibold">
-                    Chief Investment Officer
+                    Director
                   </p>
                   <p className="text-gray-400">CFA, MBA Finance</p>
 
@@ -209,9 +209,9 @@ const TeamPage = () => {
                 </div>
 
                 <div className="space-y-3 mb-6">
-                  <h3 className="text-2xl font-bold text-white">John Doe</h3>
+                  <h3 className="text-2xl font-bold text-white">Emma Hall</h3>
                   <p className="text-green-300 font-semibold">
-                    Senior Portfolio Manager
+                    Director
                   </p>
                   <p className="text-gray-400">BCom (Hons), CFA Level II</p>
 
@@ -271,9 +271,9 @@ const TeamPage = () => {
                 </div>
 
                 <div className="space-y-3 mb-6">
-                  <h3 className="text-2xl font-bold text-white">John Doe</h3>
+                  <h3 className="text-2xl font-bold text-white">Senziwani Sikhosana</h3>
                   <p className="text-orange-300 font-semibold">
-                    Research Director
+                    Director
                   </p>
                   <p className="text-gray-400">PhD Economics, CFA</p>
 
@@ -310,6 +310,66 @@ const TeamPage = () => {
                     <div className="text-center">
                       <div className="text-lg font-bold text-orange-300">
                         100+
+                      </div>
+                      <div className="text-xs text-gray-400">Site Visits</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </GlassCard>
+              <GlassCard className="relative overflow-hidden">
+              <div className="text-center">
+                <div className="relative mb-6">
+                  <div className="w-40 h-40 mx-auto rounded-2xl overflow-hidden bg-gradient-to-br from-blue-600 to-purple-600 p-1">
+                    <div className="w-full h-full rounded-xl overflow-hidden bg-gray-800 flex items-center justify-center">
+                      <IoPeopleCircleOutline size={48} className="text-gray-400" />
+                    </div>
+                  </div>
+                  <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2">
+                    <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-3 py-1 rounded-full text-xs font-semibold shadow-xl">
+                      15 Years Experience
+                    </div>
+                  </div>
+                </div>
+
+                <div className="space-y-3 mb-6">
+                  <h3 className="text-2xl font-bold text-white">Fungai Tarira</h3>
+                  <p className="text-blue-300 font-semibold">
+                    Director
+                  </p>
+                  <p className="text-gray-400">CFA, MBA Finance</p>
+
+                  <div className="space-y-2 pt-4">
+                    <div className="flex items-center justify-center text-gray-300">
+                      <MapPin size={14} className="mr-2 text-blue-400" />
+                      <span className="text-sm">South Africa</span>
+                    </div>
+                    <div className="flex items-center justify-center text-gray-300">
+                      <Building2 size={14} className="mr-2 text-blue-400" />
+                      <span className="text-sm">Founding Partner</span>
+                    </div>
+                  </div>
+
+                  <div className="flex justify-center pt-4">
+                    <div className="w-8 h-8 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition-colors duration-300 cursor-pointer">
+                      <Linkedin size={16} className="text-white" />
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-br from-blue-900/40 to-purple-900/40 rounded-xl p-4 border border-blue-500/20">
+                  <p className="text-gray-300 text-sm leading-relaxed">
+                    Leads investment strategy with deep expertise in African
+                    equity markets and portfolio management.
+                  </p>
+                  <div className="grid grid-cols-2 gap-4 pt-4 mt-4 border-t border-blue-500/20">
+                    <div className="text-center">
+                      <div className="text-lg font-bold text-blue-300">10+</div>
+                      <div className="text-xs text-gray-400">Markets</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-lg font-bold text-blue-300">
+                        200+
                       </div>
                       <div className="text-xs text-gray-400">Site Visits</div>
                     </div>

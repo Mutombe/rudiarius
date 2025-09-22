@@ -8,7 +8,6 @@ import { GrMoney } from "react-icons/gr";
 import { FaGlobeAfrica } from "react-icons/fa";
 
 
-
 // Color palette from images
 const colors = {
   primary: '#001D39',

@@ -6,6 +6,8 @@ import {
   Link,
   useLocation,
 } from "react-router-dom";
+import { CgMenuRight } from "react-icons/cg";
+import { IoClose } from "react-icons/io5";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Menu,
@@ -35,10 +37,12 @@ const colors = {
 // Layout wrapper with animated background
 const Layout = ({ children }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isResourcesOpen, setIsResourcesOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
     setIsMenuOpen(false);
+    setIsResourcesOpen(false);
   }, [location]);
 
   const navItems = [
@@ -46,6 +50,14 @@ const Layout = ({ children }) => {
     { name: "About", path: "/about" },
     { name: "Our Approach", path: "/approach" },
     { name: "Strategies", path: "/strategies" },
+    { 
+      name: "Resources", 
+      dropdown: [
+        { name: "Newsletter", path: "/newsletter" },
+        { name: "Downloads", path: "/downloads" },
+         { name: "Reports", path: "/reports" },
+      ]
+    },
     { name: "Team", path: "/team" },
     { name: "Contact", path: "/contact" },
   ];
@@ -72,17 +84,56 @@ const Layout = ({ children }) => {
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
               {navItems.map((item) => (
-                <Link
-                  key={item.path}
-                  to={item.path}
-                  className={`gellix-font text-sm font-medium transition-colors duration-300 ${
-                    location.pathname === item.path
-                      ? "text-blue-300"
-                      : "text-white hover:text-blue-200"
-                  }`}
-                >
-                  {item.name}
-                </Link>
+                <div key={item.name} className="relative">
+                  {item.dropdown ? (
+                    <div 
+                      className="relative"
+                      onMouseEnter={() => setIsResourcesOpen(true)}
+                      onMouseLeave={() => setIsResourcesOpen(false)}
+                    >
+                      <button className="gellix-font text-sm font-medium text-white hover:text-blue-200 transition-colors duration-300 flex items-center space-x-1">
+                        <span>{item.name}</span>
+                        <ChevronDown size={16} className={`transition-transform duration-200 ${isResourcesOpen ? 'rotate-180' : ''}`} />
+                      </button>
+                      
+                      <AnimatePresence>
+                        {isResourcesOpen && (
+                          <motion.div
+                            initial={{ opacity: 0, y: -10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -10 }}
+                            className="absolute top-full left-0 mt-2 w-48 bg-white/10 backdrop-blur-md rounded-xl border border-white/20 overflow-hidden"
+                          >
+                            {item.dropdown.map((dropdownItem) => (
+                              <Link
+                                key={dropdownItem.path}
+                                to={dropdownItem.path}
+                                className={`gellix-font block px-4 py-3 text-sm font-medium transition-colors ${
+                                  location.pathname === dropdownItem.path
+                                    ? "text-blue-300 bg-white/10"
+                                    : "text-white hover:text-blue-200 hover:bg-white/5"
+                                }`}
+                              >
+                                {dropdownItem.name}
+                              </Link>
+                            ))}
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
+                    </div>
+                  ) : (
+                    <Link
+                      to={item.path}
+                      className={`gellix-font text-sm font-medium transition-colors duration-300 ${
+                        location.pathname === item.path
+                          ? "text-blue-300"
+                          : "text-white hover:text-blue-200"
+                      }`}
+                    >
+                      {item.name}
+                    </Link>
+                  )}
+                </div>
               ))}
             </div>
 
@@ -91,7 +142,7 @@ const Layout = ({ children }) => {
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="md:hidden p-2 text-white"
             >
-              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              {isMenuOpen ? <IoClose size={24} /> : <CgMenuRight size={24} />}
             </button>
           </div>
 
@@ -105,17 +156,39 @@ const Layout = ({ children }) => {
                 className="md:hidden mt-4 py-4 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20"
               >
                 {navItems.map((item) => (
-                  <Link
-                    key={item.path}
-                    to={item.path}
-                    className={`gellix-font block px-6 py-3 text-sm font-medium transition-colors ${
-                      location.pathname === item.path
-                        ? "text-blue-300"
-                        : "text-white hover:text-blue-200"
-                    }`}
-                  >
-                    {item.name}
-                  </Link>
+                  <div key={item.name}>
+                    {item.dropdown ? (
+                      <>
+                        <div className="gellix-font px-6 py-3 text-sm font-medium text-gray-300">
+                          {item.name}
+                        </div>
+                        {item.dropdown.map((dropdownItem) => (
+                          <Link
+                            key={dropdownItem.path}
+                            to={dropdownItem.path}
+                            className={`gellix-font block px-8 py-2 text-sm font-medium transition-colors ${
+                              location.pathname === dropdownItem.path
+                                ? "text-blue-300"
+                                : "text-white hover:text-blue-200"
+                            }`}
+                          >
+                            {dropdownItem.name}
+                          </Link>
+                        ))}
+                      </>
+                    ) : (
+                      <Link
+                        to={item.path}
+                        className={`gellix-font block px-6 py-3 text-sm font-medium transition-colors ${
+                          location.pathname === item.path
+                            ? "text-blue-300"
+                            : "text-white hover:text-blue-200"
+                        }`}
+                      >
+                        {item.name}
+                      </Link>
+                    )}
+                  </div>
                 ))}
               </motion.div>
             )}
