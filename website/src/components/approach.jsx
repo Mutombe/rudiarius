@@ -337,7 +337,7 @@ export const ApproachPage = () => {
                 <div className="grid grid-cols-2 gap-4 text-sm">
                   <div>
                     <span className="text-gray-400">Companies Analyzed:</span>
-                    <span className="text-white font-semibold ml-2">30-60</span>
+                    <span className="text-white font-semibold ml-2">100+</span>
                   </div>
                   <div>
                     <span className="text-gray-400">Markets Covered:</span>
@@ -579,8 +579,7 @@ export const StrategiesPage = () => {
               </span>
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-8">
-              Our well-experienced team provides a number of solutions for long
-              term investors, led by our pioneer product the Africa Focused and the Trade Finance Strategy.
+              Our highly experienced team offers a range of solutions tailored for long-term investors, with our flagship products being the Africa-Focused Strategy and the Trade Finance Strategy.
             </p>
 
             <div className="grid md:grid-cols-3 gap-8 max-w-2xl mx-auto">
