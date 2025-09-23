@@ -56,6 +56,7 @@ const Layout = ({ children }) => {
         { name: "Newsletter", path: "/newsletter" },
         { name: "Downloads", path: "/downloads" },
          { name: "Reports", path: "/reports" },
+         { name: "Commentary and Insights", path: "/insights" },
       ]
     },
     { name: "Team", path: "/team" },

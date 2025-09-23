@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -6,8 +5,7 @@ import { Menu, X, ArrowRight, Shield, TrendingUp, Globe, Users, Mail, Phone, Map
 import { SiFsecure } from "react-icons/si";
 import { GrMoney } from "react-icons/gr";
 import { FaGlobeAfrica } from "react-icons/fa";
-
-
+import NewsFeed from './newsfeed';
 // Color palette from images
 const colors = {
   primary: '#001D39',
@@ -174,23 +172,6 @@ const HomePage = () => {
                 </span>
               </Link>
             </motion.div>
-
-            {/* Scroll indicator 
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: 1.5 }}
-              className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
-            >
-              <motion.div
-                animate={{ y: [0, 10, 0] }}
-                transition={{ duration: 2, repeat: Infinity }}
-                className="flex flex-col items-center text-gray-400"
-              >
-                <span className="text-xs mb-2 tracking-wider">SCROLL</span>
-                <div className="w-px h-8 bg-gradient-to-b from-gray-400 to-transparent" />
-              </motion.div>
-            </motion.div>*/}
           </motion.div>
         </div>
 
@@ -255,6 +236,7 @@ const HomePage = () => {
         </div>
       </div>
 
+      {/* News Feed Section */}
       {/* Values Section */}
       <div className="max-w-7xl mx-auto py-20">
         <motion.div

@@ -21,6 +21,8 @@ import WhistleblowingPolicy from "./components/whistleblowing";
 import ConflictOfInterestPolicy from "./components/conflict";
 import NewsletterPage from "./components/newsletter";
 import Reports from './components/reports';
+import NewsFeed from './components/newsfeed';
+
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -130,6 +132,7 @@ const App = () => {
               <Route path="/cookie-policy" element={<CookiePolicy />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="/newsletter" element={<NewsletterPage />} />
+              <Route path="/insights" element={<NewsFeed />} />
               <Route path="/reports" element={<Reports />} />
               <Route path="/esg-policy" element={<ESGPolicy />} />
               <Route path="/sfrg" element={<SFDR />} />
