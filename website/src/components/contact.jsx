@@ -285,65 +285,65 @@ const ContactPage = () => {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="relative group">
-                    <User className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-blue-300 group-focus-within:text-white transition-colors" />
+                    <User className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 placeholder-white group-focus-within:text-white transition-colors" />
                     <input
                       type="text"
                       name="firstName"
                       placeholder="First Name *"
                       value={formData.firstName}
                       onChange={handleChange}
-                      className="w-full pl-12 pr-4 py-4 bg-white/10 border border-white/20 rounded-xl text-white placeholder-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all backdrop-blur-sm"
+                      className="w-full pl-12 pr-4 py-4 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all backdrop-blur-sm"
                       required
                     />
                   </div>
                   <div className="relative group">
-                    <User className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-blue-300 group-focus-within:text-white transition-colors" />
+                    <User className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 placeholder-white group-focus-within:text-white transition-colors" />
                     <input
                       type="text"
                       name="lastName"
                       placeholder="Last Name *"
                       value={formData.lastName}
                       onChange={handleChange}
-                      className="w-full pl-12 pr-4 py-4 bg-white/10 border border-white/20 rounded-xl text-white placeholder-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all backdrop-blur-sm"
+                      className="w-full pl-12 pr-4 py-4 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all backdrop-blur-sm"
                       required
                     />
                   </div>
                 </div>
                 
                 <div className="relative group">
-                  <Mail className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-blue-300 group-focus-within:text-white transition-colors" />
+                  <Mail className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 placeholder-white group-focus-within:text-white transition-colors" />
                   <input
                     type="email"
                     name="email"
                     placeholder="Email Address *"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full pl-12 pr-4 py-4 bg-white/10 border border-white/20 rounded-xl text-white placeholder-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all backdrop-blur-sm"
+                    className="w-full pl-12 pr-4 py-4 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all backdrop-blur-sm"
                     required
                   />
                 </div>
                 
                 <div className="relative group">
-                  <Phone className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-blue-300 group-focus-within:text-white transition-colors" />
+                  <Phone className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 placeholder-gray-100 group-focus-within:text-white transition-colors" />
                   <input
                     type="tel"
                     name="phone"
                     placeholder="Phone Number"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full pl-12 pr-4 py-4 bg-white/10 border border-white/20 rounded-xl text-white placeholder-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all backdrop-blur-sm"
+                    className="w-full pl-12 pr-4 py-4 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all backdrop-blur-sm"
                   />
                 </div>
                 
                 <div className="relative group">
-                  <MessageCircle className="absolute left-4 top-6 w-5 h-5 text-blue-300 group-focus-within:text-white transition-colors" />
+                  <MessageCircle className="absolute left-4 top-6 w-5 h-5 placeholder-gray-100 group-focus-within:text-white transition-colors" />
                   <textarea
                     name="message"
                     placeholder="Your Message *"
                     rows={5}
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full pl-12 pr-4 py-4 bg-white/10 border border-white/20 rounded-xl text-white placeholder-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all resize-none backdrop-blur-sm"
+                    className="w-full pl-12 pr-4 py-4 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all resize-none backdrop-blur-sm"
                     required
                   />
                 </div>
@@ -425,17 +425,6 @@ const ContactPage = () => {
                     <p>11 Alice Lane</p>
                     <p>Sandton, Johannesburg 2196</p>
                     <p>South Africa</p>
-                  </div>
-                </div>
-                
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-white/5 rounded-xl p-4 border border-white/10 text-center">
-                    <div className="text-2xl font-bold text-blue-300 mb-1">24/7</div>
-                    <div className="text-blue-200 text-sm">Support</div>
-                  </div>
-                  <div className="bg-white/5 rounded-xl p-4 border border-white/10 text-center">
-                    <div className="text-2xl font-bold text-blue-300 mb-1">Fast</div>
-                    <div className="text-blue-200 text-sm">Response</div>
                   </div>
                 </div>
               </div>

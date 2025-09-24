@@ -26,6 +26,88 @@ import { RiSketching } from "react-icons/ri";
 import { SiFsecure } from "react-icons/si";
 import { GiWorld } from "react-icons/gi";
 
+const TradeFinanceCard = () => {
+  return (
+    <motion.div
+      initial={{ opacity: 0, x: 50 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.8, delay: 0.8 }}
+      className="lg:order-1"
+    >
+      <motion.div
+        whileHover={{ y: -5, scale: 1.02 }}
+        transition={{ duration: 0.3 }}
+        className="bg-white rounded-2xl p-6 h-full"
+      >
+        <span className="text-orange-600 text-sm tracking-wider uppercase font-semibold mb-4 block">
+          SPECIALIZED STRATEGY
+        </span>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">
+          Trade Finance Strategy
+        </h2>
+        <p className="text-gray-700 leading-relaxed mb-6">
+          The Rudiarius Multicurrency Trade Finance Strategy (RMTFS) is
+          designed to generate stable, uncorrelated returns by financing
+          high-quality corporates operating in SADC, who require working
+          capital for import-related transactions denominated in USD or
+          other hard currencies.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-8">
+          The fund seeks to bridge the liquidity gap in these countries
+          characterised by nascent and often inflexible financing
+          environments, by offering structured trade finance solutions
+          that are asset-backed, short-duration, and self-liquidating.
+        </p>
+
+        <div className="bg-orange-50 rounded-xl p-6 mb-6 border border-orange-200">
+          <h4 className="text-gray-900 font-semibold mb-4">Key Features</h4>
+          <div className="grid grid-cols-2 gap-4">
+            <div className="space-y-3">
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 rounded-full bg-orange-600"></div>
+                <span className="text-gray-700 text-sm">
+                  Asset-backed solutions
+                </span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 rounded-full bg-orange-600"></div>
+                <span className="text-gray-700 text-sm">
+                  Short-duration investments
+                </span>
+              </div>
+            </div>
+            <div className="space-y-3">
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 rounded-full bg-orange-600"></div>
+                <span className="text-gray-700 text-sm">
+                  Self-liquidating structures
+                </span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 rounded-full bg-orange-600"></div>
+                <span className="text-gray-700 text-sm">
+                  SADC region focus
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-wrap gap-3">
+          <span className="px-4 py-2 bg-orange-100 text-orange-700 rounded-full text-sm border border-orange-200">
+            Trade Finance
+          </span>
+          <span className="px-4 py-2 bg-red-100 text-red-700 rounded-full text-sm border border-red-200">
+            Asset-Backed
+          </span>
+          <span className="px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full text-sm border border-yellow-200">
+            SADC
+          </span>
+        </div>
+      </motion.div>
+    </motion.div>
+  );
+};
 
 // Color palette from images
 const colors = {
@@ -723,80 +805,7 @@ export const StrategiesPage = () => {
             </div>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-            className="lg:order-1"
-          >
-            <GlassCard className="h-full">
-              <span className="text-orange-400 text-sm tracking-wider uppercase font-semibold mb-4 block">
-                SPECIALIZED STRATEGY
-              </span>
-              <h2 className="text-3xl font-bold text-white mb-6">
-                Trade Finance Strategy
-              </h2>
-              <p className="text-gray-300 leading-relaxed mb-6">
-                The Rudiarius Multicurrency Trade Finance Strategy (RMTFS) is
-                designed to generate stable, uncorrelated returns by financing
-                high-quality corporates operating in SADC, who require working
-                capital for import-related transactions denominated in USD or
-                other hard currencies.
-              </p>
-              <p className="text-gray-300 leading-relaxed mb-8">
-                The fund seeks to bridge the liquidity gap in these countries
-                characterised by nascent and often inflexible financing
-                environments, by offering structured trade finance solutions
-                that are asset-backed, short-duration, and self-liquidating.
-              </p>
-
-              <div className="bg-orange-900/30 rounded-xl p-6 mb-6">
-                <h4 className="text-white font-semibold mb-4">Key Features</h4>
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="space-y-3">
-                    <div className="flex items-center space-x-2">
-                      <div className="w-2 h-2 rounded-full bg-orange-400"></div>
-                      <span className="text-gray-300 text-sm">
-                        Asset-backed solutions
-                      </span>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <div className="w-2 h-2 rounded-full bg-orange-400"></div>
-                      <span className="text-gray-300 text-sm">
-                        Short-duration investments
-                      </span>
-                    </div>
-                  </div>
-                  <div className="space-y-3">
-                    <div className="flex items-center space-x-2">
-                      <div className="w-2 h-2 rounded-full bg-orange-400"></div>
-                      <span className="text-gray-300 text-sm">
-                        Self-liquidating structures
-                      </span>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <div className="w-2 h-2 rounded-full bg-orange-400"></div>
-                      <span className="text-gray-300 text-sm">
-                        SADC region focus
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex flex-wrap gap-3">
-                <span className="px-4 py-2 bg-orange-600/20 text-orange-300 rounded-full text-sm">
-                  Trade Finance
-                </span>
-                <span className="px-4 py-2 bg-red-600/20 text-red-300 rounded-full text-sm">
-                  Asset-Backed
-                </span>
-                <span className="px-4 py-2 bg-yellow-600/20 text-yellow-300 rounded-full text-sm">
-                  SADC
-                </span>
-              </div>
-            </GlassCard>
-          </motion.div>
+          <TradeFinanceCard />
         </div>
 
         {/* Risk Profile & Returns */}

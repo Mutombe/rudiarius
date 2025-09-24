@@ -130,8 +130,12 @@ const TeamPage = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-            {/* John Doe 1 - Chief Investment Officer */}
-            <GlassCard className="relative overflow-hidden">
+            {/* Edward Bennet - Director */}
+            <motion.div
+              whileHover={{ y: -5, scale: 1.02 }}
+              transition={{ duration: 0.3 }}
+              className="bg-white rounded-2xl p-6 relative overflow-hidden"
+            >
               <div className="text-center">
                 <div className="relative mb-6">
                   <div className="w-40 h-40 mx-auto rounded-2xl overflow-hidden bg-gradient-to-br from-blue-600 to-purple-600 p-1">
@@ -147,19 +151,19 @@ const TeamPage = () => {
                 </div>
 
                 <div className="space-y-3 mb-6">
-                  <h3 className="text-2xl font-bold text-white">Edward Bennet</h3>
-                  <p className="text-blue-300 font-semibold">
+                  <h3 className="text-2xl font-bold text-gray-900">Edward Bennet</h3>
+                  <p className="text-blue-600 font-semibold">
                     Director
                   </p>
-                  <p className="text-gray-400">CFA, MBA Finance</p>
+                  <p className="text-gray-600">CFA, MBA Finance</p>
 
                   <div className="space-y-2 pt-4">
-                    <div className="flex items-center justify-center text-gray-300">
-                      <MapPin size={14} className="mr-2 text-blue-400" />
+                    <div className="flex items-center justify-center text-gray-600">
+                      <MapPin size={14} className="mr-2 text-blue-600" />
                       <span className="text-sm">South Africa</span>
                     </div>
-                    <div className="flex items-center justify-center text-gray-300">
-                      <Building2 size={14} className="mr-2 text-blue-400" />
+                    <div className="flex items-center justify-center text-gray-600">
+                      <Building2 size={14} className="mr-2 text-blue-600" />
                       <span className="text-sm">Founding Partner</span>
                     </div>
                   </div>
@@ -171,29 +175,33 @@ const TeamPage = () => {
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-br from-blue-900/40 to-purple-900/40 rounded-xl p-4 border border-blue-500/20">
-                  <p className="text-gray-300 text-sm leading-relaxed">
+                <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-4 border border-blue-200">
+                  <p className="text-gray-700 text-sm leading-relaxed">
                     Leads investment strategy with deep expertise in African
                     equity markets and portfolio management.
                   </p>
-                  <div className="grid grid-cols-2 gap-4 pt-4 mt-4 border-t border-blue-500/20">
+                  <div className="grid grid-cols-2 gap-4 pt-4 mt-4 border-t border-blue-200">
                     <div className="text-center">
-                      <div className="text-lg font-bold text-blue-300">10+</div>
-                      <div className="text-xs text-gray-400">Markets</div>
+                      <div className="text-lg font-bold text-blue-600">10+</div>
+                      <div className="text-xs text-gray-600">Markets</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-lg font-bold text-blue-300">
+                      <div className="text-lg font-bold text-blue-600">
                         200+
                       </div>
-                      <div className="text-xs text-gray-400">Site Visits</div>
+                      <div className="text-xs text-gray-600">Site Visits</div>
                     </div>
                   </div>
                 </div>
               </div>
-            </GlassCard>
+            </motion.div>
 
-            {/* John Doe 2 - Portfolio Manager */}
-            <GlassCard className="relative overflow-hidden">
+            {/* Emma Hall - Director */}
+            <motion.div
+              whileHover={{ y: -5, scale: 1.02 }}
+              transition={{ duration: 0.3 }}
+              className="bg-white rounded-2xl p-6 relative overflow-hidden"
+            >
               <div className="text-center">
                 <div className="relative mb-6">
                   <div className="w-40 h-40 mx-auto rounded-2xl overflow-hidden bg-gradient-to-br from-green-600 to-blue-600 p-1">
@@ -209,19 +217,19 @@ const TeamPage = () => {
                 </div>
 
                 <div className="space-y-3 mb-6">
-                  <h3 className="text-2xl font-bold text-white">Emma Hall</h3>
-                  <p className="text-green-300 font-semibold">
+                  <h3 className="text-2xl font-bold text-gray-900">Emma Hall</h3>
+                  <p className="text-green-600 font-semibold">
                     Director
                   </p>
-                  <p className="text-gray-400">BCom (Hons), CFA Level II</p>
+                  <p className="text-gray-600">BCom (Hons), CFA Level II</p>
 
                   <div className="space-y-2 pt-4">
-                    <div className="flex items-center justify-center text-gray-300">
-                      <MapPin size={14} className="mr-2 text-green-400" />
+                    <div className="flex items-center justify-center text-gray-600">
+                      <MapPin size={14} className="mr-2 text-green-600" />
                       <span className="text-sm">Kenya</span>
                     </div>
-                    <div className="flex items-center justify-center text-gray-300">
-                      <Building2 size={14} className="mr-2 text-green-400" />
+                    <div className="flex items-center justify-center text-gray-600">
+                      <Building2 size={14} className="mr-2 text-green-600" />
                       <span className="text-sm">Portfolio Management</span>
                     </div>
                   </div>
@@ -233,29 +241,33 @@ const TeamPage = () => {
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-br from-green-900/40 to-blue-900/40 rounded-xl p-4 border border-green-500/20">
-                  <p className="text-gray-300 text-sm leading-relaxed">
+                <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-xl p-4 border border-green-200">
+                  <p className="text-gray-700 text-sm leading-relaxed">
                     Specializes in East African markets with extensive
                     experience in fundamental analysis and risk management.
                   </p>
-                  <div className="grid grid-cols-2 gap-4 pt-4 mt-4 border-t border-green-500/20">
+                  <div className="grid grid-cols-2 gap-4 pt-4 mt-4 border-t border-green-200">
                     <div className="text-center">
-                      <div className="text-lg font-bold text-green-300">8+</div>
-                      <div className="text-xs text-gray-400">Markets</div>
+                      <div className="text-lg font-bold text-green-600">8+</div>
+                      <div className="text-xs text-gray-600">Markets</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-lg font-bold text-green-300">
+                      <div className="text-lg font-bold text-green-600">
                         150+
                       </div>
-                      <div className="text-xs text-gray-400">Site Visits</div>
+                      <div className="text-xs text-gray-600">Site Visits</div>
                     </div>
                   </div>
                 </div>
               </div>
-            </GlassCard>
+            </motion.div>
 
-            {/* John Doe 3 - Research Director */}
-            <GlassCard className="relative overflow-hidden">
+            {/* Senziwani Sikhosana - Director */}
+            <motion.div
+              whileHover={{ y: -5, scale: 1.02 }}
+              transition={{ duration: 0.3 }}
+              className="bg-white rounded-2xl p-6 relative overflow-hidden"
+            >
               <div className="text-center">
                 <div className="relative mb-6">
                   <div className="w-40 h-40 mx-auto rounded-2xl overflow-hidden bg-gradient-to-br from-orange-600 to-red-600 p-1">
@@ -271,19 +283,19 @@ const TeamPage = () => {
                 </div>
 
                 <div className="space-y-3 mb-6">
-                  <h3 className="text-2xl font-bold text-white">Senziwani Sikhosana</h3>
-                  <p className="text-orange-300 font-semibold">
+                  <h3 className="text-2xl font-bold text-gray-900">Senziwani Sikhosana</h3>
+                  <p className="text-orange-600 font-semibold">
                     Director
                   </p>
-                  <p className="text-gray-400">PhD Economics, CFA</p>
+                  <p className="text-gray-600">PhD Economics, CFA</p>
 
                   <div className="space-y-2 pt-4">
-                    <div className="flex items-center justify-center text-gray-300">
-                      <MapPin size={14} className="mr-2 text-orange-400" />
+                    <div className="flex items-center justify-center text-gray-600">
+                      <MapPin size={14} className="mr-2 text-orange-600" />
                       <span className="text-sm">Ghana</span>
                     </div>
-                    <div className="flex items-center justify-center text-gray-300">
-                      <Building2 size={14} className="mr-2 text-orange-400" />
+                    <div className="flex items-center justify-center text-gray-600">
+                      <Building2 size={14} className="mr-2 text-orange-600" />
                       <span className="text-sm">Research & Analysis</span>
                     </div>
                   </div>
@@ -295,29 +307,35 @@ const TeamPage = () => {
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-br from-orange-900/40 to-red-900/40 rounded-xl p-4 border border-orange-500/20">
-                  <p className="text-gray-300 text-sm leading-relaxed">
+                <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-xl p-4 border border-orange-200">
+                  <p className="text-gray-700 text-sm leading-relaxed">
                     Leads comprehensive research initiatives across West African
                     markets with focus on macroeconomic analysis.
                   </p>
-                  <div className="grid grid-cols-2 gap-4 pt-4 mt-4 border-t border-orange-500/20">
+                  <div className="grid grid-cols-2 gap-4 pt-4 mt-4 border-t border-orange-200">
                     <div className="text-center">
-                      <div className="text-lg font-bold text-orange-300">
+                      <div className="text-lg font-bold text-orange-600">
                         6+
                       </div>
-                      <div className="text-xs text-gray-400">Markets</div>
+                      <div className="text-xs text-gray-600">Markets</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-lg font-bold text-orange-300">
+                      <div className="text-lg font-bold text-orange-600">
                         100+
                       </div>
-                      <div className="text-xs text-gray-400">Site Visits</div>
+                      <div className="text-xs text-gray-600">Site Visits</div>
                     </div>
                   </div>
                 </div>
               </div>
-            </GlassCard>
-              <GlassCard className="relative overflow-hidden">
+            </motion.div>
+
+            {/* Fungai Tarira - Director */}
+            <motion.div
+              whileHover={{ y: -5, scale: 1.02 }}
+              transition={{ duration: 0.3 }}
+              className="bg-white rounded-2xl p-6 relative overflow-hidden"
+            >
               <div className="text-center">
                 <div className="relative mb-6">
                   <div className="w-40 h-40 mx-auto rounded-2xl overflow-hidden bg-gradient-to-br from-blue-600 to-purple-600 p-1">
@@ -333,19 +351,19 @@ const TeamPage = () => {
                 </div>
 
                 <div className="space-y-3 mb-6">
-                  <h3 className="text-2xl font-bold text-white">Fungai Tarira</h3>
-                  <p className="text-blue-300 font-semibold">
+                  <h3 className="text-2xl font-bold text-gray-900">Fungai Tarira</h3>
+                  <p className="text-blue-600 font-semibold">
                     Director
                   </p>
-                  <p className="text-gray-400">CFA, MBA Finance</p>
+                  <p className="text-gray-600">CFA, MBA Finance</p>
 
                   <div className="space-y-2 pt-4">
-                    <div className="flex items-center justify-center text-gray-300">
-                      <MapPin size={14} className="mr-2 text-blue-400" />
+                    <div className="flex items-center justify-center text-gray-600">
+                      <MapPin size={14} className="mr-2 text-blue-600" />
                       <span className="text-sm">South Africa</span>
                     </div>
-                    <div className="flex items-center justify-center text-gray-300">
-                      <Building2 size={14} className="mr-2 text-blue-400" />
+                    <div className="flex items-center justify-center text-gray-600">
+                      <Building2 size={14} className="mr-2 text-blue-600" />
                       <span className="text-sm">Founding Partner</span>
                     </div>
                   </div>
@@ -357,26 +375,26 @@ const TeamPage = () => {
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-br from-blue-900/40 to-purple-900/40 rounded-xl p-4 border border-blue-500/20">
-                  <p className="text-gray-300 text-sm leading-relaxed">
+                <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-4 border border-blue-200">
+                  <p className="text-gray-700 text-sm leading-relaxed">
                     Leads investment strategy with deep expertise in African
                     equity markets and portfolio management.
                   </p>
-                  <div className="grid grid-cols-2 gap-4 pt-4 mt-4 border-t border-blue-500/20">
+                  <div className="grid grid-cols-2 gap-4 pt-4 mt-4 border-t border-blue-200">
                     <div className="text-center">
-                      <div className="text-lg font-bold text-blue-300">10+</div>
-                      <div className="text-xs text-gray-400">Markets</div>
+                      <div className="text-lg font-bold text-blue-600">10+</div>
+                      <div className="text-xs text-gray-600">Markets</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-lg font-bold text-blue-300">
+                      <div className="text-lg font-bold text-blue-600">
                         200+
                       </div>
-                      <div className="text-xs text-gray-400">Site Visits</div>
+                      <div className="text-xs text-gray-600">Site Visits</div>
                     </div>
                   </div>
                 </div>
               </div>
-            </GlassCard>
+            </motion.div>
           </div>
         </motion.div>
 
