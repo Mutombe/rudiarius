@@ -304,19 +304,19 @@ const NewsFeed = () => {
       </motion.div>
 
       <div className="px-6 pb-20">
-        {/* Header */}
+        
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
-        >
+        >{/* Header 
           <div className="flex items-center justify-center mb-4">
             <h2 className="gellix-font text-4xl font-bold text-white">Latest News</h2>
           </div>
           <p className="gellix-font text-gray-300 text-lg max-w-2xl mx-auto mb-8">
             Stay informed with real-time financial news and market insights
-          </p>
+          </p>*/}
           
           {/* Controls 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
