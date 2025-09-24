@@ -190,14 +190,14 @@ const NewsFeed = () => {
   const [showFilters, setShowFilters] = useState(false);
 
   useEffect(() => {
-    // Initial fetch
-    dispatch(fetchNews({ limit: 12, category: selectedCategory }));
+    // Initial fetch - changed limit to 6
+    dispatch(fetchNews({ limit: 6, category: selectedCategory }));
     
     // Set up auto-refresh every 5 minutes
     let interval;
     if (autoRefresh) {
       interval = setInterval(() => {
-        dispatch(fetchNews({ limit: 12, category: selectedCategory }));
+        dispatch(fetchNews({ limit: 6, category: selectedCategory }));
       }, 5 * 60 * 1000); // 5 minutes
     }
     
@@ -207,12 +207,12 @@ const NewsFeed = () => {
   }, [dispatch, selectedCategory, autoRefresh]);
 
   const handleRefresh = () => {
-    dispatch(fetchNews({ limit: 12, category: selectedCategory }));
+    dispatch(fetchNews({ limit: 6, category: selectedCategory }));
   };
 
   const handleCategoryChange = (category) => {
     dispatch(setCategory(category));
-    dispatch(fetchNews({ limit: 12, category }));
+    dispatch(fetchNews({ limit: 6, category }));
   };
 
   const handleMarkAsRead = (articleId) => {
@@ -318,9 +318,9 @@ const NewsFeed = () => {
             Stay informed with real-time financial news and market insights
           </p>
           
-          {/* Controls */}
+          {/* Controls 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            {/* Category Filter */}
+            {/* Category Filter 
             <div className="flex items-center space-x-2">
               <Filter size={16} className="text-gray-400" />
               <select
@@ -336,7 +336,7 @@ const NewsFeed = () => {
               </select>
             </div>
             
-            {/* Refresh Button */}
+            {/* Refresh Button
             <button
               onClick={handleRefresh}
               disabled={loading}
@@ -346,7 +346,7 @@ const NewsFeed = () => {
               <span>Refresh</span>
             </button>
             
-            {/* Auto-refresh Toggle */}
+            {/* Auto-refresh Toggle 
             <label className="flex items-center space-x-2 text-sm text-gray-300">
               <input
                 type="checkbox"
@@ -356,7 +356,7 @@ const NewsFeed = () => {
               />
               <span>Auto-refresh</span>
             </label>
-          </div>
+          </div>*/}
           
           {/* Last Updated */}
           {lastUpdated && (

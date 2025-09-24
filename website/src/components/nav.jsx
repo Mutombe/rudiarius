@@ -54,8 +54,8 @@ const Layout = ({ children }) => {
       name: "Resources", 
       dropdown: [
         { name: "Newsletter", path: "/newsletter" },
-        { name: "Downloads", path: "/downloads" },
-         { name: "Reports", path: "/reports" },
+        //{ name: "Downloads", path: "/downloads" },
+         //{ name: "Reports", path: "/reports" },
          { name: "Commentary and Insights", path: "/insights" },
       ]
     },
