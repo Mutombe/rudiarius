@@ -425,6 +425,7 @@ const TeamPage = () => {
                   src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&auto=format&fit=crop&w=2374&q=80"
                   alt="Team collaboration"
                   className="w-full h-full object-cover"
+                  loading="eager"
                 />
               </div>
               <div className="relative z-10">
@@ -448,6 +449,7 @@ const TeamPage = () => {
                   src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2415&q=80"
                   alt="Data analysis"
                   className="w-full h-full object-cover"
+                  loading="eager"
                 />
               </div>
               <div className="relative z-10">
@@ -471,6 +473,7 @@ const TeamPage = () => {
                   src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2338&q=80"
                   alt="Global connectivity"
                   className="w-full h-full object-cover"
+                  loading="eager"
                 />
               </div>
               <div className="relative z-10">
@@ -551,6 +554,7 @@ const TeamPage = () => {
                   src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80"
                   alt="Team meeting and strategy discussion"
                   className="w-full h-full object-cover"
+                  loading="eager"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-900/80 via-transparent to-transparent"></div>
 
@@ -589,6 +593,7 @@ const TeamPage = () => {
                 src="/23.jpg"
                 alt="Professional handshake"
                 className="w-full h-full object-cover"
+                loading="eager"
               />
             </div>
             <div className="relative z-10">

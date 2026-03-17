@@ -103,6 +103,7 @@ const NewsCard = ({ article, index, onMarkAsRead }) => {
                 src={article.publisher.favicon_url}
                 alt={article.publisher.name}
                 className="w-4 h-4 rounded"
+                loading="eager"
                 onError={(e) => e.target.style.display = 'none'}
               />
             )}
@@ -245,11 +246,15 @@ const NewsFeed = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="relative py-24 px-6 text-center overflow-hidden bg-cover bg-center bg-no-repeat rounded-md"
-        style={{
-          backgroundImage: `url('/news.jpg')`
-        }}
+        className="relative py-24 px-6 text-center overflow-hidden rounded-md"
       >
+        {/* Background Image */}
+        <img
+          src="/news.jpg"
+          alt="Market news background"
+          className="absolute inset-0 w-full h-full object-cover object-center"
+          loading="eager"
+        />
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black/60 z-0"></div>
         

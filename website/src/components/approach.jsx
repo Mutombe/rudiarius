@@ -185,6 +185,7 @@ export const ApproachPage = () => {
                 src="/10.jpg"
                 alt="Investment analysis and market research"
                 className="w-full h-full object-cover"
+                loading="eager"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent"></div>
             </div>
@@ -265,6 +266,7 @@ export const ApproachPage = () => {
                 src="/11.jpg"
                 alt="Financial data analysis and charts"
                 className="w-full h-full object-cover"
+                loading="eager"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 via-blue-900/40 to-transparent"></div>
 
@@ -588,9 +590,10 @@ export const ApproachPage = () => {
           >
             <div className="relative rounded-3xl overflow-hidden h-80">
               <img
-                src="22.jpg"
+                src="/22.jpg"
                 alt="Investment team conducting research"
                 className="w-full h-full object-cover"
+                loading="eager"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent"></div>
             </div>
@@ -609,6 +612,7 @@ export const ApproachPage = () => {
                 src="/21.jpg"
                 alt="Professional meeting"
                 className="w-full h-full object-cover"
+                loading="eager"
               />
             </div>
             <div className="relative z-10">
@@ -762,6 +766,7 @@ export const StrategiesPage = () => {
                 src="/18.jpg"
                 alt="Global investment portfolio visualization"
                 className="w-full h-full object-cover"
+                loading="eager"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-blue-900/80 via-transparent to-transparent"></div>
             </div>
@@ -778,9 +783,10 @@ export const StrategiesPage = () => {
           >
             <div className="relative rounded-3xl overflow-hidden h-96">
               <img
-                src="africa.jpg"
+                src="/africa.jpg"
                 alt="Trade finance and international commerce"
                 className="w-full h-full object-cover"
+                loading="eager"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-orange-900/80 via-transparent to-transparent"></div>
 
@@ -916,6 +922,7 @@ export const StrategiesPage = () => {
                     src="/20.jpg"
                     alt="Portfolio performance analytics"
                     className="w-full h-full object-cover"
+                    loading="eager"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
                 </div>
@@ -936,6 +943,7 @@ export const StrategiesPage = () => {
                 src="/puzzle.jpg"
                 alt="Professional meeting"
                 className="w-full h-full object-cover"
+                loading="eager"
               />
             </div>
             <div className="relative z-10">

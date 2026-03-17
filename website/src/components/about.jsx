@@ -122,6 +122,7 @@ const AboutPage = () => {
                 src="/14.jpg"
                 alt="Modern office building and investment environment"
                 className="w-full h-full object-cover"
+                loading="eager"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-blue-900/80 via-transparent to-transparent"></div>
 
@@ -144,6 +145,7 @@ const AboutPage = () => {
                 src="https://images.unsplash.com/photo-1615906655593-ad0386982a0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80"
                 alt="Ancient Roman architecture"
                 className="w-full h-full object-cover"
+                loading="eager"
               />
             </div>
 
@@ -381,6 +383,7 @@ const AboutPage = () => {
                       src={milestone.image}
                       alt={milestone.title}
                       className="w-full h-full object-cover"
+                      loading="eager"
                     />
                   </div>
 
@@ -417,6 +420,7 @@ const AboutPage = () => {
                 src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80"
                 alt="Professional meeting"
                 className="w-full h-full object-cover"
+                loading="eager"
               />
             </div>
             <div className="relative z-10">
