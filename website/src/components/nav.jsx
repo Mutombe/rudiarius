@@ -307,7 +307,7 @@ const Layout = ({ children }) => {
           </div>
           <div className="gellix-font border-t border-white/10 mt-8 pt-8 text-center text-sm text-gray-400">
             <p>
-              &copy; 2025 Rudiarius Capital Management. All rights reserved.
+              &copy; 2026 Rudiarius Capital Management. All rights reserved.
             </p>
           </div>
         </div>
