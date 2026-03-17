@@ -53,9 +53,9 @@ const StewardshipCode = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="bg-white/10 backdrop-blur-md rounded-3xl border border-white/20 p-8 md:p-12"
+          className="bg-white/10 backdrop-blur-md rounded-3xl border border-white/20 p-5 sm:p-8 md:p-12"
         >
-          <h1 className="gellix-font text-4xl md:text-5xl font-bold text-white mb-8">Stewardship Code</h1>
+          <h1 className="gellix-font text-2xl sm:text-4xl md:text-5xl font-bold text-white mb-8">Stewardship Code</h1>
           
           <div className="gellix-font text-gray-200 space-y-6 leading-relaxed">
             <div className="bg-purple-900/30 rounded-xl p-6 border border-purple-500/30 mb-8">
@@ -119,7 +119,7 @@ const StewardshipCode = () => {
                   We systematically integrate stewardship and investment considerations throughout our investment process:
                 </p>
                 
-                <div className="grid md:grid-cols-3 gap-4">
+                <div className="grid sm:grid-cols-3 gap-4">
                   <div className="text-center p-4 bg-slate-700/30 rounded-lg">
                     <div className="text-blue-300 font-semibold mb-2">Pre-Investment</div>
                     <p className="text-xs text-gray-300">Due diligence includes ESG factors and governance assessment</p>

@@ -78,7 +78,7 @@ const Layout = ({ children }) => {
           <div className="flex items-center justify-between">
             <Link to="/" className="flex items-center space-x-2">
               <div className="text-2xl font-bold text-white">
-                <img src="/logob.png" alt="Logo" className="w-45 h-12" loading="eager" />
+                <img src="/logob.png" alt="Logo" className="w-32 h-8 sm:w-45 sm:h-12" loading="eager" />
               </div>
             </Link>
 
@@ -201,7 +201,7 @@ const Layout = ({ children }) => {
       <div className="gellix-font relative z-10">{children}</div>
 
       {/* Footer */}
-      <footer className="relative z-10 mt-20 px-6 py-12 bg-slate-900/50 backdrop-blur-sm">
+      <footer className="relative z-10 mt-12 md:mt-20 px-4 sm:px-6 py-8 sm:py-12 bg-slate-900/50 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8">
             <div>

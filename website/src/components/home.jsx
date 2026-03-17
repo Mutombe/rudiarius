@@ -114,7 +114,7 @@ const HomePage = () => {
               <span className="gellix-font block text-3xl md:text-5xl text-gray-200 font-light mb-4">
                 Welcome to
               </span>
-              <span className="gellix-font block text-7xl md:text-9xl font-bold bg-gradient-to-r from-blue-300 via-blue-100 to-purple-300 bg-clip-text text-transparent leading-none">
+              <span className="gellix-font block text-5xl sm:text-7xl md:text-9xl font-bold bg-gradient-to-r from-blue-300 via-blue-100 to-purple-300 bg-clip-text text-transparent leading-none">
                 Rudiarius
               </span>
               <motion.div
@@ -132,10 +132,10 @@ const HomePage = () => {
               transition={{ duration: 0.8, delay: 0.8 }}
               className="max-w-4xl mx-auto mb-12"
             >
-              <p className="gellix-font text-xl md:text-2xl text-gray-300 leading-relaxed font-light">
+              <p className="gellix-font text-base sm:text-xl md:text-2xl text-gray-300 leading-relaxed font-light">
                 Preserving the value of wealth created and growing capital in today's markets
               </p>
-              <p className="gellix-font text-lg md:text-xl text-gray-400 mt-4 leading-relaxed">
+              <p className="gellix-font text-sm sm:text-lg md:text-xl text-gray-400 mt-4 leading-relaxed">
                 requires a nuanced approach, handled by dedicated professionals.
               </p>
             </motion.div>
@@ -145,11 +145,11 @@ const HomePage = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1 }}
-              className="flex flex-col sm:flex-row gap-6 justify-center items-center"
+              className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center"
             >
               <Link
                 to="/about"
-                className="group relative overflow-hidden px-10 py-5 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-2xl font-semibold transition-all duration-500 transform hover:scale-105 hover:shadow-2xl shadow-blue-500/25"
+                className="group relative overflow-hidden px-6 py-4 sm:px-10 sm:py-5 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-2xl font-semibold transition-all duration-500 transform hover:scale-105 hover:shadow-2xl shadow-blue-500/25"
               >
                 <span className="gellix-font relative z-10 flex items-center">
                   Discover Our Approach 
@@ -160,7 +160,7 @@ const HomePage = () => {
               
               <Link
                 to="/strategies"
-                className="group px-10 py-5 bg-white/5 backdrop-blur-xl border border-white/20 text-white hover:bg-white/10 rounded-2xl font-semibold transition-all duration-500 hover:border-blue-400/50 hover:shadow-2xl shadow-white/10"
+                className="group px-6 py-4 sm:px-10 sm:py-5 bg-white/5 backdrop-blur-xl border border-white/20 text-white hover:bg-white/10 rounded-2xl font-semibold transition-all duration-500 hover:border-blue-400/50 hover:shadow-2xl shadow-white/10"
               >
                 <span className="gellix-font flex items-center">
                   View Strategies
@@ -206,7 +206,7 @@ const HomePage = () => {
 
       {/* Features Section */}
       <div className="max-w-7xl mx-auto py-20">
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
           <GlassCard>
             <SiFsecure className="text-blue-400 mb-4" size={40} />
             <h3 className="gellix-font text-xl font-semibold text-white mb-3">Risk Management</h3>
@@ -245,13 +245,13 @@ const HomePage = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="gellix-font text-4xl font-bold text-white mb-4">Our Values</h2>
+          <h2 className="gellix-font text-3xl sm:text-4xl font-bold text-white mb-4">Our Values</h2>
           <p className="gellix-font text-gray-300 text-lg max-w-2xl mx-auto">
             These values shape our approach to work and are reflected in everything we do
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-5 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
           {[
             { number: '01', title: 'Bold', desc: 'We are confident and courageous', color: 'from-orange-500 to-red-500' },
             { number: '02', title: 'Insight', desc: 'We gain deep and accurate understanding', color: 'from-blue-600 to-indigo-600' },

@@ -216,11 +216,11 @@ const ContactPage = () => {
             <span className="text-blue-100 font-semibold">Let's Start a Conversation</span>
           </div>
           
-          <h1 className="text-6xl md:text-7xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
             Contact <span className="bg-gradient-to-r from-blue-300 to-cyan-300 bg-clip-text text-transparent">Us</span>
           </h1>
           
-          <p className="text-blue-100 text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-blue-100 text-base sm:text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
             Let us connect and learn how we may be of service to you. We're here to help transform your business with innovative solutions.
           </p>
           
@@ -237,7 +237,7 @@ const ContactPage = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16"
+          className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12 md:mb-16"
         >
           {contactInfo.map((info, index) => (
             <motion.div
@@ -251,7 +251,7 @@ const ContactPage = () => {
                 <div className={`w-16 h-16 bg-gradient-to-br ${info.color} rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
                   <info.icon className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-white mb-3">{info.title}</h3>
+                <h3 className="text-base sm:text-xl font-semibold text-white mb-3">{info.title}</h3>
                 <div className="space-y-1">
                   {info.details.map((detail, idx) => (
                     <p key={idx} className="text-blue-200 text-sm">{detail}</p>
@@ -263,7 +263,7 @@ const ContactPage = () => {
         </motion.div>
 
         {/* Main Content Grid */}
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
           
           {/* Contact Form */}
           <motion.div
@@ -277,7 +277,7 @@ const ContactPage = () => {
                   <MessageCircle className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h2 className="text-3xl font-bold text-white">Send us a Message</h2>
+                  <h2 className="text-xl sm:text-3xl font-bold text-white">Send us a Message</h2>
                   <p className="text-blue-200">We'll get back to you within 24 hours</p>
                 </div>
               </div>

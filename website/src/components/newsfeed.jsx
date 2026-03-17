@@ -266,7 +266,7 @@ const NewsFeed = () => {
             className="flex items-center justify-center mb-6"
           >
             <TrendingUp className="text-blue-400 mr-4" size={48} />
-            <h1 className="gellix-font text-5xl md:text-6xl font-bold text-white">
+            <h1 className="gellix-font text-3xl sm:text-5xl md:text-6xl font-bold text-white">
               Market Pulse
             </h1>
           </motion.div>
@@ -275,7 +275,7 @@ const NewsFeed = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="gellix-font text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-8"
+            className="gellix-font text-base sm:text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-8"
           >
             Your gateway to real-time financial intelligence. Stay ahead of market movements with instant access to breaking news, analysis, and insights.
           </motion.p>
@@ -392,7 +392,7 @@ const NewsFeed = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+            className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"
           >
             <AnimatePresence>
               {articles.map((article, index) => (

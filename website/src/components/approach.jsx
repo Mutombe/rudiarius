@@ -37,12 +37,12 @@ const TradeFinanceCard = () => {
       <motion.div
         whileHover={{ y: -5, scale: 1.02 }}
         transition={{ duration: 0.3 }}
-        className="bg-white rounded-2xl p-6 h-full"
+        className="bg-white rounded-2xl p-5 sm:p-6 h-full"
       >
         <span className="text-orange-600 text-sm tracking-wider uppercase font-semibold mb-4 block">
           SPECIALIZED STRATEGY
         </span>
-        <h2 className="text-3xl font-bold text-gray-900 mb-6">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
           Trade Finance Strategy
         </h2>
         <p className="text-gray-700 leading-relaxed mb-6">
@@ -137,16 +137,16 @@ export const ApproachPage = () => {
     <div className="px-6 py-20">
       <div className="max-w-7xl mx-auto">
         {/* Hero Section with Investment Image */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-12 md:mb-20">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-5xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
               Our Investment Approach
             </h1>
-            <p className="text-xl text-gray-300 leading-relaxed mb-8">
+            <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed mb-8">
               We believe that applying a well-considered, risk-cognisant
               approach to investing, sometimes in markets that are regarded as
               nascent and fragile, lends itself to earning superior investment
@@ -180,7 +180,7 @@ export const ApproachPage = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative"
           >
-            <div className="relative rounded-3xl overflow-hidden h-96">
+            <div className="relative rounded-3xl overflow-hidden h-60 md:h-96">
               <img
                 src="/10.jpg"
                 alt="Investment analysis and market research"
@@ -200,7 +200,7 @@ export const ApproachPage = () => {
           className="mb-20"
         >
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-white mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">
               What We Believe
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
@@ -209,8 +209,8 @@ export const ApproachPage = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8">
-            <div className="text-center bg-white rounded-lg shadow-lg p-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            <div className="text-center bg-white rounded-lg shadow-lg p-5 sm:p-8">
               <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <RiSketching  size={32} className="text-white" />
               </div>
@@ -224,7 +224,7 @@ export const ApproachPage = () => {
               </p>
             </div>
 
-            <div className="text-center bg-white rounded-lg shadow-lg p-8">
+            <div className="text-center bg-white rounded-lg shadow-lg p-5 sm:p-8">
               <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-blue-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <SiFsecure size={32} className="text-white" />
               </div>
@@ -238,7 +238,7 @@ export const ApproachPage = () => {
               </p>
             </div>
 
-            <div className="text-center bg-white rounded-lg shadow-lg p-8">
+            <div className="text-center bg-white rounded-lg shadow-lg p-5 sm:p-8">
               <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <GiWorld size={32} className="text-white" />
               </div>
@@ -254,14 +254,14 @@ export const ApproachPage = () => {
         </motion.div>
 
         {/* Investment Process Flow */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-12 md:mb-20">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
             className="relative"
           >
-            <div className="relative rounded-3xl overflow-hidden h-80">
+            <div className="relative rounded-3xl overflow-hidden h-60 md:h-80">
               <img
                 src="/11.jpg"
                 alt="Financial data analysis and charts"
@@ -366,7 +366,7 @@ export const ApproachPage = () => {
           className="mb-20"
         >
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-white mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">
               Investment Methodologies
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
@@ -490,7 +490,7 @@ export const ApproachPage = () => {
         </motion.div>
 
         {/* Research Methodology with Team Image */}
-        <div className="grid lg:grid-cols-3 gap-12 items-start mb-20">
+        <div className="grid lg:grid-cols-3 gap-8 lg:gap-12 items-start mb-12 md:mb-20">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -498,7 +498,7 @@ export const ApproachPage = () => {
             className="lg:col-span-2"
           >
             <GlassCard>
-              <h2 className="text-3xl font-bold text-white mb-6">
+              <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">
                 Research Methodology
               </h2>
               <p className="text-gray-300 leading-relaxed mb-6">
@@ -588,7 +588,7 @@ export const ApproachPage = () => {
             transition={{ duration: 0.8, delay: 1.4 }}
             className="relative"
           >
-            <div className="relative rounded-3xl overflow-hidden h-80">
+            <div className="relative rounded-3xl overflow-hidden h-60 md:h-80">
               <img
                 src="/22.jpg"
                 alt="Investment team conducting research"
@@ -616,7 +616,7 @@ export const ApproachPage = () => {
               />
             </div>
             <div className="relative z-10">
-              <h3 className="text-3xl font-bold text-white mb-4">
+              <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">
                 Ready to explore our investment strategies?
               </h3>
               <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
@@ -658,13 +658,13 @@ export const StrategiesPage = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-6xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
               Investment{" "}
               <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
                 Strategies
               </span>
             </h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-8">
+            <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-8">
               Our highly experienced team offers a range of solutions tailored for long-term investors, with our flagship products being the Africa-Focused Strategy and the Trade Finance Strategy.
             </p>
 
@@ -688,17 +688,17 @@ export const StrategiesPage = () => {
         </div>
 
         {/* Strategy 1: Worldwide Flexible Strategy */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-12 md:mb-20">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <div className="h-full bg-white rounded-lg shadow-lg p-8">
+            <div className="h-full bg-white rounded-lg shadow-lg p-5 sm:p-8">
               <span className="text-blue-600 text-sm tracking-wider uppercase font-semibold mb-4 block">
                 FLAGSHIP STRATEGY
               </span>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
                 Africa Focused Strategy
               </h2>
               <p className="text-gray-700 leading-relaxed mb-6">
@@ -761,7 +761,7 @@ export const StrategiesPage = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="relative"
           >
-            <div className="relative rounded-3xl overflow-hidden h-96">
+            <div className="relative rounded-3xl overflow-hidden h-60 md:h-96">
               <img
                 src="/18.jpg"
                 alt="Global investment portfolio visualization"
@@ -774,14 +774,14 @@ export const StrategiesPage = () => {
         </div>
 
         {/* Strategy 2: Trade Finance Strategy */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-12 md:mb-20">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
             className="relative lg:order-2"
           >
-            <div className="relative rounded-3xl overflow-hidden h-96">
+            <div className="relative rounded-3xl overflow-hidden h-60 md:h-96">
               <img
                 src="/africa.jpg"
                 alt="Trade finance and international commerce"
@@ -825,7 +825,7 @@ export const StrategiesPage = () => {
             <span className="text-blue-400 text-sm tracking-wider uppercase font-semibold mb-4 block">
               PERFORMANCE METRICS
             </span>
-            <h2 className="text-4xl font-bold text-white mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">
               Risk Profile & Expected Returns
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
@@ -834,7 +834,7 @@ export const StrategiesPage = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 mb-12">
             <GlassCard className="text-center">
               <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <span className="text-white font-bold text-xl">2-5</span>
@@ -947,7 +947,7 @@ export const StrategiesPage = () => {
               />
             </div>
             <div className="relative z-10">
-              <h3 className="text-3xl font-bold text-white mb-4">
+              <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">
                 Ready to invest with confidence?
               </h3>
               <p className="text-gray-300 mb-8 max-w-2xl mx-auto">

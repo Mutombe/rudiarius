@@ -54,13 +54,13 @@ const TeamPage = () => {
           <span className="text-blue-400 text-sm tracking-wider uppercase font-semibold mb-4 block">
             LEADERSHIP
           </span>
-          <h1 className="text-6xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
             Meet our{" "}
             <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
               Team
             </span>
           </h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
             Experienced in investing in multiple markets & in running investment
             management businesses. Our dedicated professionals bring decades of
             expertise to every investment decision.
@@ -72,7 +72,7 @@ const TeamPage = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="grid md:grid-cols-4 gap-6 mb-20"
+          className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mb-12 md:mb-20"
         >
           <GlassCard className="text-center">
             <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
@@ -129,7 +129,7 @@ const TeamPage = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-7xl mx-auto">
             {/* Edward Bennet - Director */}
             <motion.div
               whileHover={{ y: -5, scale: 1.02 }}
@@ -138,7 +138,7 @@ const TeamPage = () => {
             >
               <div className="text-center">
                 <div className="relative mb-6">
-                  <div className="w-40 h-40 mx-auto rounded-2xl overflow-hidden bg-gradient-to-br from-blue-600 to-purple-600 p-1">
+                  <div className="w-28 h-28 sm:w-40 sm:h-40 mx-auto rounded-2xl overflow-hidden bg-gradient-to-br from-blue-600 to-purple-600 p-1">
                     <div className="w-full h-full rounded-xl overflow-hidden bg-gray-800 flex items-center justify-center">
                       <IoPeopleCircleOutline size={48} className="text-gray-400" />
                     </div>
@@ -151,7 +151,7 @@ const TeamPage = () => {
                 </div>
 
                 <div className="space-y-3 mb-6">
-                  <h3 className="text-2xl font-bold text-gray-900">Edward Bennet</h3>
+                  <h3 className="text-lg sm:text-2xl font-bold text-gray-900">Edward Bennet</h3>
                   <p className="text-blue-600 font-semibold">
                     Director
                   </p>
@@ -204,7 +204,7 @@ const TeamPage = () => {
             >
               <div className="text-center">
                 <div className="relative mb-6">
-                  <div className="w-40 h-40 mx-auto rounded-2xl overflow-hidden bg-gradient-to-br from-green-600 to-blue-600 p-1">
+                  <div className="w-28 h-28 sm:w-40 sm:h-40 mx-auto rounded-2xl overflow-hidden bg-gradient-to-br from-green-600 to-blue-600 p-1">
                     <div className="w-full h-full rounded-xl overflow-hidden bg-gray-800 flex items-center justify-center">
                       <TrendingUp size={48} className="text-gray-400" />
                     </div>
@@ -217,7 +217,7 @@ const TeamPage = () => {
                 </div>
 
                 <div className="space-y-3 mb-6">
-                  <h3 className="text-2xl font-bold text-gray-900">Emma Hall</h3>
+                  <h3 className="text-lg sm:text-2xl font-bold text-gray-900">Emma Hall</h3>
                   <p className="text-green-600 font-semibold">
                     Director
                   </p>
@@ -270,7 +270,7 @@ const TeamPage = () => {
             >
               <div className="text-center">
                 <div className="relative mb-6">
-                  <div className="w-40 h-40 mx-auto rounded-2xl overflow-hidden bg-gradient-to-br from-orange-600 to-red-600 p-1">
+                  <div className="w-28 h-28 sm:w-40 sm:h-40 mx-auto rounded-2xl overflow-hidden bg-gradient-to-br from-orange-600 to-red-600 p-1">
                     <div className="w-full h-full rounded-xl overflow-hidden bg-gray-800 flex items-center justify-center">
                       <Award size={48} className="text-gray-400" />
                     </div>
@@ -283,7 +283,7 @@ const TeamPage = () => {
                 </div>
 
                 <div className="space-y-3 mb-6">
-                  <h3 className="text-2xl font-bold text-gray-900">Senziwani Sikhosana</h3>
+                  <h3 className="text-lg sm:text-2xl font-bold text-gray-900">Senziwani Sikhosana</h3>
                   <p className="text-orange-600 font-semibold">
                     Director
                   </p>
@@ -338,7 +338,7 @@ const TeamPage = () => {
             >
               <div className="text-center">
                 <div className="relative mb-6">
-                  <div className="w-40 h-40 mx-auto rounded-2xl overflow-hidden bg-gradient-to-br from-blue-600 to-purple-600 p-1">
+                  <div className="w-28 h-28 sm:w-40 sm:h-40 mx-auto rounded-2xl overflow-hidden bg-gradient-to-br from-blue-600 to-purple-600 p-1">
                     <div className="w-full h-full rounded-xl overflow-hidden bg-gray-800 flex items-center justify-center">
                       <IoPeopleCircleOutline size={48} className="text-gray-400" />
                     </div>
@@ -351,7 +351,7 @@ const TeamPage = () => {
                 </div>
 
                 <div className="space-y-3 mb-6">
-                  <h3 className="text-2xl font-bold text-gray-900">Fungai Tarira</h3>
+                  <h3 className="text-lg sm:text-2xl font-bold text-gray-900">Fungai Tarira</h3>
                   <p className="text-blue-600 font-semibold">
                     Director
                   </p>
@@ -409,7 +409,7 @@ const TeamPage = () => {
             <span className="text-blue-400 text-sm tracking-wider uppercase font-semibold mb-4 block">
               OUR VALUES
             </span>
-            <h2 className="text-4xl font-bold text-white mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">
               What Drives Our Team
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
@@ -418,7 +418,7 @@ const TeamPage = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
             <GlassCard className="text-center relative overflow-hidden">
               <div className="absolute inset-0 opacity-10">
                 <img
@@ -505,7 +505,7 @@ const TeamPage = () => {
               <span className="text-blue-400 text-sm tracking-wider uppercase font-semibold mb-4 block">
                 OUR APPROACH
               </span>
-              <h2 className="text-4xl font-bold text-white mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6">
                 Collaborative Excellence
               </h2>
               <p className="text-gray-300 leading-relaxed mb-6">
@@ -549,7 +549,7 @@ const TeamPage = () => {
             </div>
 
             <div className="relative">
-              <div className="relative rounded-3xl overflow-hidden h-96">
+              <div className="relative rounded-3xl overflow-hidden h-64 md:h-96">
                 <img
                   src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80"
                   alt="Team meeting and strategy discussion"
@@ -597,7 +597,7 @@ const TeamPage = () => {
               />
             </div>
             <div className="relative z-10">
-              <h3 className="text-3xl font-bold text-white mb-4">
+              <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">
                 Ready to work with our team?
               </h3>
               <p className="text-gray-300 mb-8 max-w-2xl mx-auto">

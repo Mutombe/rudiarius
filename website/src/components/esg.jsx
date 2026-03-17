@@ -19,9 +19,9 @@ const ESGPolicy = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="bg-white/10 backdrop-blur-md rounded-3xl border border-white/20 p-8 md:p-12"
+          className="bg-white/10 backdrop-blur-md rounded-3xl border border-white/20 p-5 sm:p-8 md:p-12"
         >
-          <h1 className="gellix-font text-4xl md:text-5xl font-bold text-white mb-8">ESG Policy</h1>
+          <h1 className="gellix-font text-2xl sm:text-4xl md:text-5xl font-bold text-white mb-8">ESG Policy</h1>
           
           <div className="gellix-font text-gray-200 space-y-6 leading-relaxed">
             <div className="bg-green-900/30 rounded-xl p-6 border border-green-500/30 mb-8">
@@ -104,7 +104,7 @@ const ESGPolicy = () => {
                 We use our bespoke ESG framework to guide analysis, decision making, and reporting across a consistent set of themes designed to highlight the material matters that are most relevant in each investment:
               </p>
               
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                 {pillars.map((pillar, index) => (
                   <motion.div
                     key={index}
