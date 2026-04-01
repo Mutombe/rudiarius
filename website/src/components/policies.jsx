@@ -1,125 +1,264 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Shield, Lock, Eye, Database, Globe, Bell, UserCheck, Server } from 'lucide-react';
 
 const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800">
-      <div className="max-w-4xl mx-auto px-6 py-20">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="bg-white/10 backdrop-blur-md rounded-3xl border border-white/20 p-8 md:p-12"
+          className="bg-white/10 backdrop-blur-md rounded-3xl border border-white/20 p-5 sm:p-8 md:p-12"
         >
-          <h1 className="gellix-font text-4xl md:text-5xl font-bold text-white mb-8">Privacy Policy</h1>
-          
+          <h1 className="gellix-font text-2xl sm:text-4xl md:text-5xl font-bold text-white mb-8">Privacy Policy</h1>
+
           <div className="gellix-font text-gray-200 space-y-6 leading-relaxed">
-            <p className="text-lg">
-              This policy sets out the basis on which any personal data Rudiarius Capital Management collects from you, or that you provide to us, will be processed by us.
-            </p>
-            
+            {/* Introduction Banner */}
+            <div className="bg-blue-900/30 rounded-xl p-5 sm:p-6 border border-blue-500/30 mb-8">
+              <p className="text-blue-200 text-base sm:text-lg">
+                At Rudiarius Capital Management (Pty) Ltd and its affiliated entities (collectively referred to as "Rudiarius Capital Management", "we", "our", or "us"), we are committed to protecting your privacy and ensuring the security of your personal information. We process personal data in compliance with the Protection of Personal Information Act, 2013 (POPIA), including but not limited to the conditions for lawful processing and the rights of data subjects.
+              </p>
+            </div>
+
             <p>
-              Please read the following carefully to understand our views and practices regarding your personal data and how we will treat it.
+              This policy explains how we collect, use, share, and protect your data, and outlines your rights regarding this information.
             </p>
 
-            <div className="space-y-8">
-              <section>
-                <h2 className="text-2xl font-bold text-blue-300 mb-4">Introduction</h2>
-                <p>
-                  This Privacy Notice outlines how Rudiarius Capital Management ("Rudiarius," "we," "us," or "our") collects, uses, processes, and protects your personal data when you browse and interact with our website. We take your privacy very seriously. We will ensure that all the personal information we collected about you is processed fairly and lawfully, in accordance with applicable data privacy legislation and we aim to meet current internet best practice. For the purpose of data protection regulations, Rudiarius acts as a data controller.
-                </p>
-              </section>
+            {/* Section 1 */}
+            <section>
+              <h2 className="text-xl sm:text-2xl font-bold text-blue-300 mb-4">1. Information We Collect</h2>
+              <p className="mb-4">We may collect the following categories of personal information in order to provide our services and meet our legal obligations:</p>
 
-              <section>
-                <h2 className="text-2xl font-bold text-blue-300 mb-4">Contact Details</h2>
-                <div className="bg-slate-800/50 rounded-xl p-6 border border-white/10">
-                  <p><strong>Rudiarius Capital Management</strong></p>
-                  <p>Sandton, Johannesburg</p>
-                  <p>South Africa</p>
-                  <p>FSP License: 45286</p>
-                  <p>Email: fungai@rudiarius.co.za</p>
-                  <p>Phone: +27 10 017 6996</p>
+              <div className="grid sm:grid-cols-2 gap-4">
+                <div className="bg-slate-800/30 rounded-xl p-4 sm:p-5 border border-white/10">
+                  <div className="flex items-center space-x-3 mb-3">
+                    <div className="bg-blue-500/20 rounded-lg p-2">
+                      <UserCheck size={18} className="text-blue-300" />
+                    </div>
+                    <h3 className="font-semibold text-blue-200">Personal Identifiers</h3>
+                  </div>
+                  <p className="text-sm">Name, ID number, passport number, date of birth, and tax identification number.</p>
                 </div>
-              </section>
-
-              <section>
-                <h2 className="text-2xl font-bold text-blue-300 mb-4">Types of Personal Data We Collect</h2>
-                <p>Where we collect data that identifies an individual this is classed as "personal data". We collect various types of personal data, including but not limited to:</p>
-                
-                <div className="grid md:grid-cols-2 gap-4 mt-4">
-                  <div className="bg-slate-800/30 rounded-lg p-4 border border-white/10">
-                    <h3 className="font-semibold text-blue-200 mb-2">Identity Data</h3>
-                    <p className="text-sm">Full name, title, previous names, marital status, date of birth, photographic proof of identity.</p>
+                <div className="bg-slate-800/30 rounded-xl p-4 sm:p-5 border border-white/10">
+                  <div className="flex items-center space-x-3 mb-3">
+                    <div className="bg-blue-500/20 rounded-lg p-2">
+                      <Globe size={18} className="text-blue-300" />
+                    </div>
+                    <h3 className="font-semibold text-blue-200">Contact Information</h3>
                   </div>
-                  <div className="bg-slate-800/30 rounded-lg p-4 border border-white/10">
-                    <h3 className="font-semibold text-blue-200 mb-2">Contact Data</h3>
-                    <p className="text-sm">Postal address, email address, telephone numbers.</p>
-                  </div>
-                  <div className="bg-slate-800/30 rounded-lg p-4 border border-white/10">
-                    <h3 className="font-semibold text-blue-200 mb-2">Financial Data</h3>
-                    <p className="text-sm">Bank account details, tax information, investment history, source of funds.</p>
-                  </div>
-                  <div className="bg-slate-800/30 rounded-lg p-4 border border-white/10">
-                    <h3 className="font-semibold text-blue-200 mb-2">Technical Data</h3>
-                    <p className="text-sm">IP address, browser type and version, time zone setting, operating system and platform.</p>
-                  </div>
+                  <p className="text-sm">Physical address, postal address, telephone numbers, and email addresses.</p>
                 </div>
+                <div className="bg-slate-800/30 rounded-xl p-4 sm:p-5 border border-white/10">
+                  <div className="flex items-center space-x-3 mb-3">
+                    <div className="bg-blue-500/20 rounded-lg p-2">
+                      <Database size={18} className="text-blue-300" />
+                    </div>
+                    <h3 className="font-semibold text-blue-200">Financial Information</h3>
+                  </div>
+                  <p className="text-sm">Bank account details, transaction history, investment records, credit assessments, and source of funds declarations.</p>
+                </div>
+                <div className="bg-slate-800/30 rounded-xl p-4 sm:p-5 border border-white/10">
+                  <div className="flex items-center space-x-3 mb-3">
+                    <div className="bg-blue-500/20 rounded-lg p-2">
+                      <Server size={18} className="text-blue-300" />
+                    </div>
+                    <h3 className="font-semibold text-blue-200">Digital Data</h3>
+                  </div>
+                  <p className="text-sm">IP addresses, browser type, cookies, device identifiers, and website interaction data.</p>
+                </div>
+                <div className="bg-slate-800/30 rounded-xl p-4 sm:p-5 border border-white/10">
+                  <div className="flex items-center space-x-3 mb-3">
+                    <div className="bg-blue-500/20 rounded-lg p-2">
+                      <Shield size={18} className="text-blue-300" />
+                    </div>
+                    <h3 className="font-semibold text-blue-200">Special Personal Information</h3>
+                  </div>
+                  <p className="text-sm">Biometric data and health-related information where required for specific services, processed with appropriate safeguards under POPIA.</p>
+                </div>
+                <div className="bg-slate-800/30 rounded-xl p-4 sm:p-5 border border-white/10">
+                  <div className="flex items-center space-x-3 mb-3">
+                    <div className="bg-blue-500/20 rounded-lg p-2">
+                      <Eye size={18} className="text-blue-300" />
+                    </div>
+                    <h3 className="font-semibold text-blue-200">Third-Party Sources</h3>
+                  </div>
+                  <p className="text-sm">We may collect data from partners, service providers, professional representatives, and regulatory authorities under lawful compliance.</p>
+                </div>
+              </div>
 
-                <p className="mt-4">
-                  The above list is not exhaustive and we may from time to time require additional information to satisfy our legal and regulatory obligations. Where additional information is required we will provide you with a reasonable explanation of why it is required unless we are prevented from doing so by law.
-                </p>
-              </section>
-
-              <section>
-                <h2 className="text-2xl font-bold text-blue-300 mb-4">How We Collect Your Personal Data</h2>
-                <ul className="space-y-2 list-disc list-inside">
-                  <li><strong>Direct Interactions:</strong> You may provide your personal data by filling in forms or questionnaires or by responding information requests from us, corresponding with us by post, phone, email, or otherwise.</li>
-                  <li><strong>Third Parties:</strong> We may receive personal data about you from various third parties, including intermediaries where you have authorised the sharing of your personal data, public databases, and professional advisors.</li>
-                </ul>
-              </section>
-
-              <section>
-                <h2 className="text-2xl font-bold text-blue-300 mb-4">Purpose and Legal Basis for Processing</h2>
-                <p>We only collect your personal data where we have a lawful purpose to do so. These reasons include:</p>
-                <ul className="space-y-2 list-disc list-inside mt-4">
-                  <li><strong>Legitimate Interests:</strong> To manage our relationship with you, improve our services, and ensure security.</li>
-                  <li><strong>Legal Obligations:</strong> To comply with legal and regulatory requirements.</li>
-                  <li><strong>Consent:</strong> To send marketing communications where you have given your explicit consent.</li>
-                </ul>
-              </section>
-
-              <section>
-                <h2 className="text-2xl font-bold text-blue-300 mb-4">Data Security</h2>
-                <p>
-                  We implement appropriate security measures to protect your personal data from unauthorised access, alteration, disclosure, or destruction. We restrict access to personal data to employees, agents, contractors, and other third parties who have a business need to know.
-                </p>
-              </section>
-
-              <section>
-                <h2 className="text-2xl font-bold text-blue-300 mb-4">Your Rights</h2>
-                <p>
-                  You have various rights in relation to your personal data, including to request access to your personal data, to request rectification of inaccurate personal data, to request the erasure of your personal data, to request restrictions on the processing of your personal data and to object to our processing of your personal data.
-                </p>
-                <p className="mt-4">
-                  To exercise these rights, contact us at <a href="mailto:fungai@rudiarius.co.za" className="text-blue-300 hover:text-blue-200 transition-colors">fungai@rudiarius.co.za</a>. We aim to respond within one month.
-                </p>
-              </section>
-
-              <section>
-                <h2 className="text-2xl font-bold text-blue-300 mb-4">Contact Us</h2>
-                <p>
-                  If you have any questions or concerns about this Privacy Policy, please contact us at <a href="mailto:fungai@rudiarius.co.za" className="text-blue-300 hover:text-blue-200 transition-colors">fungai@rudiarius.co.za</a>.
-                </p>
-              </section>
-
-              <div className="bg-blue-900/30 rounded-xl p-6 border border-blue-500/30 mt-8">
-                <p className="text-sm text-blue-200">
-                  <strong>Last Updated:</strong> September 2025
-                </p>
-                <p className="text-sm text-blue-200 mt-2">
-                  This Privacy Policy may be updated from time to time. Any changes will be posted on this page.
+              <div className="bg-yellow-900/20 rounded-xl p-4 border border-yellow-500/20 mt-4">
+                <p className="text-sm text-yellow-200">
+                  <strong>Children's Data:</strong> We do not knowingly collect personal information from children under the age of 18 without verifiable parental or guardian consent, in accordance with POPIA.
                 </p>
               </div>
+            </section>
+
+            {/* Section 2 */}
+            <section>
+              <h2 className="text-xl sm:text-2xl font-bold text-blue-300 mb-4">2. How We Use Your Data</h2>
+              <p className="mb-4">Your personal information is used for the following purposes:</p>
+
+              <div className="space-y-3">
+                {[
+                  { title: "Service Delivery", desc: "To manage your investment accounts, process transactions, and deliver the financial services you have requested." },
+                  { title: "Legal & Regulatory Compliance", desc: "To meet our obligations under POPIA, FICA, the Financial Advisory and Intermediary Services Act, and other applicable South African legislation." },
+                  { title: "Fraud Prevention & Security", desc: "To detect, prevent, and investigate fraudulent or unauthorised activities and to protect our clients and business." },
+                  { title: "Marketing & Communication", desc: "To send you market commentary, newsletters, and investment updates where you have provided your explicit consent." },
+                  { title: "Security Monitoring", desc: "To monitor and maintain the security of our systems, networks, and digital platforms." }
+                ].map((item, index) => (
+                  <div key={index} className="bg-slate-800/20 rounded-lg p-4 border border-white/5">
+                    <div className="flex items-start space-x-3">
+                      <div className="bg-blue-500 text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">
+                        {index + 1}
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-white text-sm">{item.title}</h4>
+                        <p className="text-sm text-gray-300 mt-1">{item.desc}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div className="bg-slate-800/30 rounded-xl p-4 sm:p-5 border border-white/10 mt-4">
+                <h4 className="font-semibold text-blue-200 mb-2">Lawful Basis for Processing</h4>
+                <p className="text-sm">We rely on the following lawful grounds: your consent, the performance of a contract, compliance with a legal obligation, and the protection of our legitimate interests (such as fraud prevention and business administration).</p>
+              </div>
+            </section>
+
+            {/* Section 3 */}
+            <section>
+              <h2 className="text-xl sm:text-2xl font-bold text-blue-300 mb-4">3. Data Sharing</h2>
+              <p>
+                We may share your personal information with regulatory authorities (such as the FSCA and the Information Regulator), contracted service providers, partner financial institutions, auditors, and legal advisors where required to fulfil our obligations. All third parties with whom we share data are bound by confidentiality agreements and are required to comply with POPIA.
+              </p>
+              <p className="mt-3">
+                We will never sell your personal information to third parties for marketing purposes.
+              </p>
+            </section>
+
+            {/* Section 4 */}
+            <section>
+              <h2 className="text-xl sm:text-2xl font-bold text-blue-300 mb-4">4. Data Retention</h2>
+              <div className="grid sm:grid-cols-3 gap-4">
+                <div className="bg-slate-800/30 rounded-xl p-4 border border-white/10 text-center">
+                  <div className="text-2xl font-bold text-blue-300 mb-2">7 Years</div>
+                  <h4 className="font-semibold text-white text-sm mb-1">Personal Identifiers</h4>
+                  <p className="text-xs text-gray-400">Retained up to 7 years after account closure</p>
+                </div>
+                <div className="bg-slate-800/30 rounded-xl p-4 border border-white/10 text-center">
+                  <div className="text-2xl font-bold text-blue-300 mb-2">7 Years</div>
+                  <h4 className="font-semibold text-white text-sm mb-1">Financial Records</h4>
+                  <p className="text-xs text-gray-400">As required by regulatory compliance</p>
+                </div>
+                <div className="bg-slate-800/30 rounded-xl p-4 border border-white/10 text-center">
+                  <div className="text-2xl font-bold text-blue-300 mb-2">As Needed</div>
+                  <h4 className="font-semibold text-white text-sm mb-1">Special Information</h4>
+                  <p className="text-xs text-gray-400">Retained only as long as necessary for purpose</p>
+                </div>
+              </div>
+            </section>
+
+            {/* Section 5 */}
+            <section>
+              <h2 className="text-xl sm:text-2xl font-bold text-blue-300 mb-4">5. Your Rights</h2>
+              <p className="mb-4">Under POPIA, you have the following rights in relation to your personal information:</p>
+
+              <div className="grid sm:grid-cols-2 gap-3">
+                {[
+                  "Right to access your personal information",
+                  "Right to request correction of inaccurate data",
+                  "Right to request deletion of your data",
+                  "Right to object to the processing of your data",
+                  "Right to be informed about data collection",
+                  "Right to withdraw consent at any time",
+                  "Right to lodge a complaint with the Information Regulator",
+                  "Right not to be subject to automated decision-making"
+                ].map((right, index) => (
+                  <div key={index} className="flex items-center space-x-2 bg-slate-800/20 rounded-lg p-3 border border-white/5">
+                    <div className="w-2 h-2 rounded-full bg-blue-400 flex-shrink-0"></div>
+                    <span className="text-sm">{right}</span>
+                  </div>
+                ))}
+              </div>
+
+              <p className="mt-4 text-sm">
+                To exercise any of these rights, please contact our Information Officer at <a href="mailto:info@rudiarius.co.za" className="text-blue-300 hover:text-blue-200 transition-colors">info@rudiarius.co.za</a>. We will respond to your request within a reasonable time, not exceeding 30 days.
+              </p>
+            </section>
+
+            {/* Section 6 */}
+            <section>
+              <h2 className="text-xl sm:text-2xl font-bold text-blue-300 mb-4">6. Security Measures</h2>
+              <p className="mb-4">We implement robust technical and organisational measures to safeguard your personal information:</p>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                {[
+                  { icon: Lock, label: "Encryption" },
+                  { icon: Shield, label: "Access Controls" },
+                  { icon: Eye, label: "Regular Audits" },
+                  { icon: Server, label: "Penetration Testing" },
+                  { icon: Bell, label: "24/7 Monitoring" },
+                  { icon: Database, label: "Secure Backups" }
+                ].map((measure, index) => (
+                  <div key={index} className="bg-slate-800/30 rounded-lg p-3 border border-white/10 text-center">
+                    <measure.icon size={20} className="text-blue-300 mx-auto mb-2" />
+                    <span className="text-xs text-gray-300">{measure.label}</span>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            {/* Section 7 */}
+            <section>
+              <h2 className="text-xl sm:text-2xl font-bold text-blue-300 mb-4">7. Cookies and Tracking</h2>
+              <p>
+                Our website uses cookies and similar tracking technologies for secure authentication, analytics, and to enhance your browsing experience. You can manage your cookie preferences through your browser settings. Please note that disabling certain cookies may affect the functionality of our website.
+              </p>
+            </section>
+
+            {/* Section 8 */}
+            <section>
+              <h2 className="text-xl sm:text-2xl font-bold text-blue-300 mb-4">8. International Data Transfers</h2>
+              <p>
+                Where it is necessary to transfer your personal information outside of South Africa, we ensure that adequate safeguards are in place in accordance with Section 72 of POPIA. Such transfers will only occur to jurisdictions with comparable data protection laws, or subject to binding agreements that ensure the protection of your rights.
+              </p>
+            </section>
+
+            {/* Section 9 */}
+            <section>
+              <h2 className="text-xl sm:text-2xl font-bold text-blue-300 mb-4">9. Updates to this Policy</h2>
+              <p>
+                We may update this Privacy Policy from time to time to reflect changes in our practices, legal requirements, or operational needs. The most current version will always be available on our website. We encourage you to review this policy periodically.
+              </p>
+            </section>
+
+            {/* Section 10 */}
+            <section>
+              <h2 className="text-xl sm:text-2xl font-bold text-blue-300 mb-4">10. Contact Us</h2>
+              <div className="bg-slate-800/50 rounded-xl p-5 sm:p-6 border border-white/10">
+                <p className="mb-4">For any questions, concerns, or requests regarding your personal information, please contact our Information Officer:</p>
+                <div className="space-y-2">
+                  <p><strong className="text-white">Rudiarius Capital Management (Pty) Ltd</strong></p>
+                  <p>Level 2, Bowman Building</p>
+                  <p>11 Alice Lane</p>
+                  <p>Sandton, Johannesburg 2196</p>
+                  <p>South Africa</p>
+                  <p className="mt-3">Tel: <a href="tel:+27100176996" className="text-blue-300 hover:text-blue-200 transition-colors">+27 10 017 6996</a></p>
+                  <p>Email: <a href="mailto:info@rudiarius.co.za" className="text-blue-300 hover:text-blue-200 transition-colors">info@rudiarius.co.za</a></p>
+                  <p className="mt-3 text-sm text-gray-400">FSP License: 45286 | Authorised Financial Services Provider</p>
+                </div>
+              </div>
+            </section>
+
+            <div className="bg-blue-900/30 rounded-xl p-5 sm:p-6 border border-blue-500/30 mt-8">
+              <p className="text-sm text-blue-200">
+                <strong>Last Updated:</strong> March 2026
+              </p>
+              <p className="text-sm text-blue-200 mt-2">
+                This Privacy Policy is reviewed and updated regularly to ensure it reflects our current practices and commitments to data protection.
+              </p>
             </div>
           </div>
         </motion.div>
