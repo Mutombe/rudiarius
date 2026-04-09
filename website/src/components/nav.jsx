@@ -59,7 +59,7 @@ const Layout = ({ children }) => {
          { name: "Commentary and Insights", path: "/insights" },
       ]
     },
-    //{ name: "Team", path: "/team" },
+    { name: "Team", path: "/team" },
     { name: "Contact", path: "/contact" },
   ];
 
